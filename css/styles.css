@@ -1,0 +1,8 @@
+@import "bootstrap.css";
+@import "https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

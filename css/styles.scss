@@ -1,0 +1,13 @@
+// font-family: 'Montserrat', sans-serif;
+
+@import "bootstrap.css";
+@import "https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css";
+// @import "https://resources/demos/style.css";
+
+@import "mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
