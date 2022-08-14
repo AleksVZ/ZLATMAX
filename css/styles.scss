@@ -5,12 +5,17 @@
 // @import "https://resources/demos/style.css";
 
 @import "mixins";
+@import "header";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background: rgb(241, 6, 6);
+
+.container{
+    max-width: 1592px;
+    margin: auto;
+
+
 }

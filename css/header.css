@@ -1,52 +1,56 @@
-@import "bootstrap.css";
-@import "https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css";
 header {
   background: #141414;
 }
+
 header .nav {
   width: 100%;
   position: relative;
 }
+
 @media (max-width: 800px) {
   header .nav {
     height: 50px;
   }
 }
+
 header .nav .nav-header {
   display: inline-block;
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
 }
+
 header .nav .nav-btn {
   display: none;
 }
+
 header .nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
+
 header .nav .nav-links li {
   display: inline;
   float: right;
   font-size: 18px;
 }
+
 header .nav .nav-links li a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
 }
+
 header .nav .nav-links li a :hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 header .nav #nav-check {
   display: none;
 }
+
 @media (max-width: 800px) {
   header .nav > .nav-btn {
     display: inline-block;
@@ -78,7 +82,6 @@ header .nav #nav-check {
     width: 120%;
     background-color: #141414;
     height: 0px;
-    -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
@@ -95,16 +98,4 @@ header .nav #nav-check {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  max-width: 1592px;
-  margin: auto;
 }
