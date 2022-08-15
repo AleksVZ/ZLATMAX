@@ -7,63 +7,88 @@ header{
     
 
     .nav {
-    
     width: 100%;
-    // background-color: #4d4d4d;
+
     position: relative;
-    // display: block;
+
     @media (max-width:800px) {
         height: 50px;
-
         }
-
         .nav-header {
-        // display: inline;
         display: inline-block;
         font-size: 22px;
         color: #fff;
         padding: 10px 10px 10px 10px;
-
-            // .nav-title {
-            //     display: inline-block;
-            //     font-size: 22px;
-            //     color: #fff;
-            //     padding: 10px 10px 10px 10px;
-            // }
     }
     .nav-btn {
         display: none;
-
-
     }
     .nav-links {
-        // display: inline;
-        // float: right;
-        // font-size: 18px;
         display: flex;
         justify-content: space-between;
         width: 100%;
-
+        :hover{
+          color: #E8AA31;
+        }
+        .nav_right{
+          order: 2;         
+          }
+        .nav_left{
+          order: 1;
+          li:last-child{
+            @media (max-width:800px) {
+              border-bottom: 1px solid #3D3D3D ;
+              }
+          }
+        }
 
         li{
             display: inline;
             float: right;
             font-size: 18px;
+
+            @media (max-width:800px) {
+              border-top: 1px solid #3D3D3D ;
+              }
+            
             a {
                 display: inline-block;
                 padding: 13px 10px 13px 10px;
                 text-decoration: none;
                 color: #efefef;
-                :hover {
-                    background-color: rgba(0, 0, 0, 0.3);
-                }
+
+
+
             }
+        }
+        .hidden{
+          display: none;
+          
+          @media (max-width:800px) {
+            display: inline-block;
+    
+            }
+        }
+        .personal_Icon{
+          
+          width: 21px;
+          // color: #E8AA31;
+          // overflow: hidden;
+          // img{
+          //   display: block;
+          //   width: 100%;
+          // }
+          @media (max-width:800px) {
+            display: none;
+            }
+
         }
     }
     #nav-check {
         display: none;
 
       }
+
 
 
 
@@ -100,17 +125,20 @@ header{
     .nav > .nav-links {
       position: absolute;
       display: block;
-      width: 120%;
+      width: calc(100% + 30px);
       background-color: $colorBlack;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: -15px;
+      
     }
     .nav > .nav-links > ul > li {
       display: block;
       width: 100%;
+  
+      
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -119,6 +147,14 @@ header{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+
+
+
+
+
+
+
+      
+    }
   }
 
-}
