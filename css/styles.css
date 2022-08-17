@@ -37,6 +37,7 @@ header .nav .nav-links .nav_right {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  position: relative;
 }
 header .nav .nav-links .nav_right li:first-child :before {
   background-image: url("../img/Icon_Personal.svg");
@@ -45,7 +46,7 @@ header .nav .nav-links .nav_right li:first-child :before {
   width: 21px;
   height: 28px;
   position: absolute;
-  top: 29px;
+  top: 8px;
   right: 173px;
 }
 @media (max-width: 800px) {

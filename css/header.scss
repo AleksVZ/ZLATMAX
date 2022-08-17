@@ -30,6 +30,7 @@ header{
         }
         .nav_right{
           order: 2;
+          position: relative;
 
           li:first-child{
               :before{
@@ -39,7 +40,7 @@ header{
               width: 21px;
               height: 28px;
               position: absolute;
-              top: 29px;
+              top: 8px;
               right: 173px;
               @media (max-width:800px) {
                     display: none;
