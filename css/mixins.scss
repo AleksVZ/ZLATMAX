@@ -5,3 +5,13 @@
   }
 
 $colorBlack:#141414;
+$colorOrange:#E8AA31;
+
+@mixin link {
+  display: inline-block;
+  text-decoration: none;
+  :hover{
+    color: #E8AA31;
+  }
+}
+

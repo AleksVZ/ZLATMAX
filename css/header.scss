@@ -4,11 +4,9 @@ $colorBlack:#141414;
 header{
     background:$colorBlack;
     
-    
 
     .nav {
     width: 100%;
-
     position: relative;
 
     @media (max-width:800px) {
@@ -28,21 +26,21 @@ header{
         justify-content: space-between;
         width: 100%;
         :hover{
-          color: #E8AA31;
+          color: $colorOrange;
         }
         .nav_right{
           order: 2;
-          li:first-child{
 
+          li:first-child{
               :before{
               background-image: url('../img/Icon_Personal.svg');
               content: "";
               display: inline-block;
               width: 21px;
-              height: 29px;
-              position: relative;
-              top: 7px;
-              margin-right: 15px;
+              height: 28px;
+              position: absolute;
+              top: 29px;
+              right: 173px;
               @media (max-width:800px) {
                     display: none;
                     }
@@ -52,6 +50,7 @@ header{
           }
         .nav_left{
           order: 1;
+ 
           li:last-child{
             @media (max-width:800px) {
               border-bottom: 1px solid #3D3D3D ;
@@ -70,7 +69,7 @@ header{
             
             a {
                 display: inline-block;
-                padding: 13px 10px 13px 10px;
+                padding: 10px 13px ;
                 text-decoration: none;
                 color: #efefef;
             }
@@ -86,12 +85,6 @@ header{
         display: none;
 
       }
-
-
-
-
-
-
     }
 
   @media (max-width:800px) {
@@ -109,7 +102,7 @@ header{
       width: 50px;
       height: 50px;
       padding: 13px;
-      background-color: orange;
+      background-color: $colorOrange;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
@@ -130,6 +123,7 @@ header{
       overflow-y: hidden;
       top: 50px;
       left: -15px;
+      z-index: 99;
       
     }
     .nav > .nav-links > ul > li {
@@ -145,12 +139,6 @@ header{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
-
-
-
-
-
-
 
       
     }
