@@ -31,6 +31,8 @@ header .nav .nav-links {
   width: 100%;
 }
 header .nav .nav-links :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #E8AA31;
 }
 header .nav .nav-links .nav_right {
@@ -140,6 +142,100 @@ header .nav #nav-check {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+
+.logo_form {
+  background: #ECF1F2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo_form .row .logo {
+  width: 189px;
+}
+.logo_form .row .logo img {
+  width: 100%;
+  display: block;
+}
+.logo_form .row .search_logo_form {
+  max-width: 377px;
+  width: 100%;
+  position: relative;
+}
+.logo_form .row .search_logo_form ::before {
+  background-image: url("../img/Glass_loop.svg");
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+.logo_form .row .search_logo_form :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+}
+.logo_form .row .search_logo_form :focus {
+  border-color: #E8AA31;
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px 1px #E8AA31;
+          box-shadow: 0 0 3px 1px #E8AA31;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.logo_form .row .search_logo_form input {
+  width: 98%;
+  border: 1px solid rgba(4, 4, 4, 0.5);
+  border-radius: 3px;
+  padding: 12px 20px 12px 44px;
+}
+.logo_form .row .search_logo_form input ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo_form .row .search_logo_form input ::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo_form .row .search_logo_form input :-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo_form .row .search_logo_form input ::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo_form .row .search_logo_form input ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo_form .row #choice_city {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #ECF1F2;
 }
 
 * {

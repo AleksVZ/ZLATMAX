@@ -57,14 +57,42 @@
 <section class="logo_form">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-md-12">
+            <div class="col-12 col-md-6 d-flex justify-content-between align-items-center ">
                 <div class="logo">
                     <img src="img/logo.svg" alt="logo">
                 </div>
 
+                <form name="search" action="#" method="post" class="search_logo_form">
+                    <label for="search_logo_form"></label>
+                    <input type="text" name="search_logo_form" placeholder="Поиск" id="search_logo_form"> </input>
+                </form>
             </div>
-            <div class="col-6 col-md-12">
-                
+
+            <div class="col-12 col-md-6 d-flex justify-content-between align-items-center">
+                <form name="choice_city" action="#" method="post" class="d-flex justify-content-between align-items-center">
+
+                    <div>
+                        <label for="choice_city"></label>
+                        <select name="choice_city" id="choice_city">
+                            <option selected> Москва</option>
+                            <option>Минск</option>
+                            <option>Тула</option>
+                            <option>Ростов-на-Дону</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="choice_phone" class="d-block">Заказать звонок</label>
+                        <select name="choice_phone" id="choice_phone">
+                            <option selected>8-800-777-49-67</option>
+                            <option>8-900-777-49-67</option>
+                            <option>8-600-777-49-67</option>
+                            <option>8-700-777-49-67</option>
+                        </select>
+                    </div>
+
+                </form>
+                <a href="#">Оформить заказ</a>
             </div>
 
 

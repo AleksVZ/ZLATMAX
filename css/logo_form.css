@@ -1,0 +1,30 @@
+.logo_form {
+  background: #ECF1F2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo_form .row .search_logo_form {
+  max-width: 377px;
+  width: 100%;
+}
+
+.logo_form .row .search_logo_form :hover {
+  border: 1px solid #E8AA31;
+}
+
+.logo_form .row .search_logo_form input {
+  width: 98%;
+  border: 1px solid rgba(4, 4, 4, 0.5);
+  border-radius: 3px;
+  padding: 12px 20px;
+}
+
+.logo_form .row .search_logo_form input ::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}

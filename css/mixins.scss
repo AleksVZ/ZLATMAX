@@ -7,11 +7,19 @@
 $colorBlack:#141414;
 $colorOrange:#E8AA31;
 
-@mixin link {
-  display: inline-block;
-  text-decoration: none;
-  :hover{
-    color: #E8AA31;
+@mixin hover {
+  transition: 0.2s;
+  color: #E8AA31;
   }
-}
+@mixin hover_border {
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+  }
 
+@mixin focusForm {
+  border-color: $colorOrange;
+  outline: 0;
+  box-shadow: 0 0 3px 1px $colorOrange;
+  transition: 0.2s;
+
+}
