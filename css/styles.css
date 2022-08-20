@@ -149,6 +149,18 @@ header .nav #nav-check {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.logo_form .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1342px) {
+  .logo_form .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .logo_form .row .logo {
   width: 189px;
 }
@@ -225,7 +237,36 @@ header .nav #nav-check {
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
-.logo_form .row #choice_city {
+.logo_form .row .choice_city_form .cities ::before {
+  background-image: url("../img/Icon_Location.svg");
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  left: -12px;
+}
+.logo_form .row .choice_city_form .phones {
+  margin-right: 125px;
+}
+.logo_form .row .choice_city_form .phones label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #E8AA31;
+}
+.logo_form .row .choice_city_form .phones #choice_phone {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  border: none;
+  background: #ECF1F2;
+}
+.logo_form .row .choice_city_form #choice_city {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -236,6 +277,51 @@ header .nav #nav-check {
      -moz-appearance: none;
           appearance: none;
   background: #ECF1F2;
+}
+.logo_form .row .basket_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+.logo_form .row .basket_box li :hover {
+  text-decoration: none;
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.logo_form .row .basket_box li:first-child ::before {
+  background-image: url("../img/Icon_Like.svg");
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: -100px;
+}
+.logo_form .row .basket_box li:nth-child(2) ::before {
+  background-image: url("../img/Icon_basket.svg");
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: -55px;
+}
+.logo_form .row .basket_box a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E8AA31;
+}
+.logo_form .row .basket_box a :hover {
+  color: #14df44;
 }
 
 * {

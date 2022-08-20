@@ -57,7 +57,8 @@
 <section class="logo_form">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 d-flex justify-content-between align-items-center ">
+
+            <div class="col-12 col-xl-6 d-flex  justify-content-between align-items-center pr-5 ">
                 <div class="logo">
                     <img src="img/logo.svg" alt="logo">
                 </div>
@@ -68,10 +69,11 @@
                 </form>
             </div>
 
-            <div class="col-12 col-md-6 d-flex justify-content-between align-items-center">
-                <form name="choice_city" action="#" method="post" class="d-flex justify-content-between align-items-center">
+            <div class="col-12 col-xl-6 d-flex justify-content-between align-items-center">
 
-                    <div>
+                <form name="choice_city" action="#" method="post" class="d-flex justify-content-between align-items-center choice_city_form " >
+
+                    <div class="cities mr-3">
                         <label for="choice_city"></label>
                         <select name="choice_city" id="choice_city">
                             <option selected> Москва</option>
@@ -81,7 +83,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="phones">
                         <label for="choice_phone" class="d-block">Заказать звонок</label>
                         <select name="choice_phone" id="choice_phone">
                             <option selected>8-800-777-49-67</option>
@@ -92,13 +94,13 @@
                     </div>
 
                 </form>
-                <a href="#">Оформить заказ</a>
+                <ul class="basket_box">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Оформить заказ</a></li>
+                </ul>
+
             </div>
-
-
-
-
-
         </div>
 
     </div>

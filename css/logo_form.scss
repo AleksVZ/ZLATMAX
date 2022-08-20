@@ -5,6 +5,13 @@
 
     
     .row{
+        flex-wrap: wrap;
+        @media (max-width:1342px) {
+            flex-direction: column;
+            }
+
+
+
         .logo{
             width: 189px;
             img{
@@ -31,9 +38,6 @@
                 @include hover_border;
             }
             :focus {
-                // border-color: $colorOrange;
-                // outline: 0;
-                // box-shadow: 0 0 3px 1px $colorOrange;
                 @include focusForm ;
               }
             input{
@@ -53,6 +57,43 @@
                 }
             }
         }
+        .choice_city_form{
+            .cities{
+                
+                ::before{
+                    background-image: url('../img/Icon_Location.svg');
+                    content: '';
+                    display: inline-block;
+                    width: 17px;
+                    height: 25px;
+                    position: relative;
+                    top: 5px;
+                    left: -12px;
+                }
+            }
+
+
+
+        .phones{
+            margin-right: 125px;
+            label{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #E8AA31;
+
+            }
+            #choice_phone{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                border: none;
+                background: #ECF1F2;
+            }
+        }
         #choice_city{
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -62,11 +103,67 @@
             border: none;
             appearance: none;
             background: #ECF1F2;
-
-
         }
-    }
+    }      
+    .basket_box{
+        display: flex;
+        list-style: none;
+        position: relative;
+            li{
+                :hover{
+                    text-decoration: none;
+                    color: $colorBlack;
+                    transition: 0.2s;
+                    // @include focusForm;
+                    // padding: 5px 2px;
 
+                    
+            }
+
+            }
+            li:first-child {
+                ::before{
+                    background-image: url('../img/Icon_Like.svg');
+                    content: '';
+                    background-size: cover;
+                    display: inline-block;
+                    width: 28px;
+                    height: 26px;
+                    position: absolute;
+                    top: 2px;
+                    left: -100px;
+            }
+            }
+            li:nth-child(2) {
+                ::before{
+                    background-image: url('../img/Icon_basket.svg');
+                    background-size: cover;
+                    content: '';
+                    display: inline-block;
+                    width: 37px;
+                    height: 26px;
+                    position: absolute;
+                    top: 2px;
+                    left: -55px;
+            }
+            }
+            a{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #E8AA31;
+
+                :hover{
+                    color: #14df44;
+                }
+
+            }
+
+
+        
+    }
+    }
 
 
 
