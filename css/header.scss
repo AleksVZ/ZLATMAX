@@ -14,7 +14,7 @@ header{
         }
         .nav-header {
         display: inline-block;
-        font-size: 22px;
+        font-size: 20px;
         color: #fff;
         padding: 10px 10px 10px 10px;
     }
@@ -62,7 +62,7 @@ header{
         li{
             display: inline;
             float: right;
-            font-size: 18px;
+            font-size: 16px;
 
             @media (max-width:800px) {
               border-top: 1px solid #3D3D3D ;
