@@ -401,6 +401,24 @@ header .nav #nav-check {
   color: #14df44;
 }
 
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+#navbar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
