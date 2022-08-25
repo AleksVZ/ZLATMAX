@@ -2,31 +2,25 @@ $colorBlack:#141414;
 
 
 header{
-    background:$colorBlack;
+    background:$colorOrange;
+  
     
 
     .nav {
     width: 100%;
-    position: relative;
 
     @media (max-width:800px) {
-        height: 50px;
-        }
-        .nav-header {
-        display: inline-block;
-        font-size: 20px;
-        color: #fff;
-        padding: 10px 10px 10px 10px;
+      display: none;
     }
-    .nav-btn {
-        display: none;
-    }
+
     .nav-links {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        align-items: center;
         :hover{
-          @include hover;
+          transition: 0.2s;
+          color: #4f31e8;
         }
         .nav_right{
           order: 2;
@@ -34,114 +28,42 @@ header{
 
           li:first-child{
               :before{
-              background-image: url('../img/Icon_Personal.svg');
-              content: "";
-              display: inline-block;
-              width: 21px;
-              height: 28px;
-              position: absolute;
-              top: 8px;
-              right: 173px;
-              @media (max-width:800px) {
-                    display: none;
-                    }
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                content: "\f007";
+                font-size: 20px;
+                color: $colorBlack ;
+                margin-right: 10px;
+                @media (max-width:800px){
+                  display:none;
+          
+                }
+
+              
+
+
             }
           
         }
           }
         .nav_left{
           order: 1;
- 
-          li:last-child{
-            @media (max-width:800px) {
-              border-bottom: 1px solid #3D3D3D ;
-              }
-          }
+
         }
 
         li{
             display: inline;
             float: right;
-            font-size: 16px;
-
-            @media (max-width:800px) {
-              border-top: 1px solid #3D3D3D ;
-              }
-            
+            font-size: 16px;            
             a {
                 display: inline-block;
                 padding: 10px 13px ;
                 text-decoration: none;
-                color: #efefef;
+                color: $colorBlack;
             }
         }
-        .hidden{
-          display: none;
-          @media (max-width:800px) {
-            display: inline-block;
-            }
-        }
-    }
-    #nav-check {
-        display: none;
 
-      }
+    }
     }
 
-  @media (max-width:800px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      padding-right:0px ;
-      padding-left: 0px;
- 
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-      background-color: $colorOrange;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: calc(100% + 30px);
-      background-color: $colorBlack;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: -15px;
-      z-index: 99;
-      
-    }
-    .nav > .nav-links > ul > li {
-      display: block;
-      width: 100%;
-  
-      
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-
-      
-    }
   }
-

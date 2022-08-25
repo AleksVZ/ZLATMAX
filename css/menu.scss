@@ -1,5 +1,67 @@
+.menu{
+	background-color: $colorBlack;
+	// background-color:rgb(16, 16, 16);
+
+
+	.navbar-toggler{
+		color: $colorOrange;
+		background: $colorOrange;
+	}
+	.navbar-light{
+		.navbar-nav{
+
+
+			li{
+
+				:hover{
+					color: $colorOrange;
+				}
+			}
+			.nav-link {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				color: #FFFFFF;
+
+
+				
+				}
+
+			// @media (max-width:991px) {
+			// 		height: 100vh;
+		    // }
+
+		} 
+
+
+	} 
+	.navbar-nav{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	.navbar{
+		padding-left: 0px;
+		padding-right: 0px;
+		.icon_user{
+			display: none;
+
+			@media (max-width:800px){
+				display:inline-block;
+				color: orange;
+
+		}
+	}
+
+	}
+
+}
+
 .megamenu-li {
 	position: static;
+	
 }
 
 .megamenu {
@@ -8,10 +70,5 @@
 	left: 0;
 	right: 0;
 	padding: 15px;
-}
-
-#navbar{
-    justify-content: center;
-
 
 }

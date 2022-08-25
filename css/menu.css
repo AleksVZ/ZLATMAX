@@ -1,3 +1,15 @@
+.menu {
+  background-color: #101010;
+}
+
+.menu .navbar-light .navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 .megamenu-li {
   position: static;
 }
@@ -8,8 +20,4 @@
   left: 0;
   right: 0;
   padding: 15px;
-}
-
-#navbar {
-  justify-content: center;
 }
