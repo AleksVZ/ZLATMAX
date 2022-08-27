@@ -371,6 +371,30 @@ header .nav .nav-links li a {
   left: 0;
   right: 0;
   padding: 15px;
+  background: #141414;
+}
+@media (max-width: 800px) {
+  .megamenu {
+    padding: 0px;
+  }
+}
+.megamenu .row {
+  margin-right: -25px;
+  margin-left: -25px;
+  color: white;
+}
+.megamenu .row div :first-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+.megamenu .row div a {
+  background-color: #141414;
+}
+.megamenu .row .dropdown-item {
+  color: white;
+  border-bottom: 1px solid #3D3D3D;
 }
 
 * {
