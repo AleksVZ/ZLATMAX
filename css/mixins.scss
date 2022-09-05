@@ -23,3 +23,10 @@ $colorOrange:#E8AA31;
   transition: 0.2s;
 
 }
+@mixin Button {
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+}

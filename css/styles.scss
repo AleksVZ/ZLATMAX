@@ -4,14 +4,30 @@
 @import "https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css";
 // @import "https://resources/demos/style.css";
 
+
 @import "mixins";
 @import "header";
 @import "logo_form";
 @import "menu";
+@import "main_section";
 
 *{
 
     box-sizing: border-box;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
 }
 ul{
     padding-left: 0px;

@@ -18,13 +18,36 @@ header{
         justify-content: space-between;
         width: 100%;
         align-items: center;
+        li{
+          display: inline;
+          float: right;
+          font-size: 16px;            
+          a {
+              display: inline-block;
+              padding: 10px 13px ;
+              text-decoration: none;
+              color: $colorBlack;
+
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+
+          }
         :hover{
           transition: 0.2s;
-          color: #4f31e8;
+          color: rgba(255, 255, 255, 0.81);
+          transform: scale(1.05, 1.05);
+
+
         }
+ }
+
         .nav_right{
           order: 2;
           position: relative;
+          
           
 
           li:first-child{
@@ -47,17 +70,7 @@ header{
 
         }
 
-        li{
-            display: inline;
-            float: right;
-            font-size: 16px;            
-            a {
-                display: inline-block;
-                padding: 10px 13px ;
-                text-decoration: none;
-                color: $colorBlack;
-            }
-        }
+
 
     }
     }

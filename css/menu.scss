@@ -1,6 +1,6 @@
 .menu{
 	background-color: $colorBlack;
-	// background-color:rgb(16, 16, 16);
+
 
 
 	.navbar-toggler{
@@ -9,16 +9,13 @@
 	}
 	.navbar-light{
 		.navbar-nav{
-
-
 			li{
-				// border-bottom: 2px solid transparent;
-
-
 				:hover{
 					color: $colorOrange;
-					// border-bottom: 2px solid $colorOrange;
-					
+				
+				}
+				.dropdown-menu{
+					border-bottom: 2px solid transparent;
 				}
 			}
 			.nav-link {
@@ -27,8 +24,7 @@
 				font-size: 16px;
 				line-height: 20px;
 				color: #FFFFFF;
-
-
+				border-bottom: 2px solid transparent;
 				
 				}
 
@@ -40,16 +36,21 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		
 
 	}
 	.navbar{
 		padding-left: 0px;
 		padding-right: 0px;
+
 		.icon_user{
 			display: none;
+			text-decoration: none;
+			color: white;
+
 			@media (max-width:800px){
 				display:inline-block;
-				color: orange;
+
 		}
 	}
 
@@ -60,6 +61,8 @@
 .megamenu-li {
 	position: static;
 	
+	
+	
 }
 
 .megamenu {
@@ -69,6 +72,7 @@
 	right: 0;
 	padding: 15px;
 	background: $colorBlack;
+	
 	@media (max-width:800px){
 		padding: 0px;
     }
@@ -76,22 +80,36 @@
 		margin-right: -25px;
 		margin-left: -25px;
 		color: white;
+
+	
 		div{
 			:first-child{
 				font-weight: 700;
 				font-size: 16px;
 				line-height: 50px;
-				color: #FFFFFF;
+				color: #e4c27e;
+
+				
 			}
+		border-bottom: 2px solid transparent;
+		:hover{
+			// color: $colorOrange;
+			border-bottom: 2px solid $colorOrange;
+			
+		}
+
 			a{
 				background-color: #141414;
+
 			}
 		}
 	
 		.dropdown-item{
 			color: white;
-	        border-bottom: 1px solid #3D3D3D;
+	        border-bottom: 2px solid #3D3D3D;
+			
 		}
 	}
 
 }
+

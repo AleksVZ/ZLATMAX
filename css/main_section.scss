@@ -1,0 +1,113 @@
+.main_section{
+    background-image: url('../img/BG_Main_section.jpg');
+    background-size: cover;
+    // height: 100vh;
+
+
+    .row{
+        .main_section_left{
+            
+            h1{
+                color: #FFFFFF;
+                padding-top: 48px ;
+                padding-bottom: 30px;
+                @include max-screen (767px){
+                    font-size: 20px;
+                    line-height: 30px;
+    
+                }
+            }
+            
+            p{
+                color: rgba(255, 255, 255, 0.7);
+                padding-bottom: 62px;
+                @include max-screen (767px){
+                    font-size: 16px;
+                    line-height: 22px;
+    
+                }
+            }
+            .button{
+                a{
+                @include Button;
+                padding: 12px 52px;
+                background: $colorOrange;
+                box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+                }
+                :hover{
+                    color: $colorOrange;
+                    @include hover_border;
+                    background: $colorBlack;
+                }
+                @include max-screen (767px){
+                    text-align: center;
+
+                }
+            }
+
+
+
+        }
+        .main_section_right{
+            max-width: 448px;
+            width: 100%;
+            padding-top: 36px;
+            padding-bottom: 60px;
+            img{
+                width: 100%;
+                display: block;
+            }
+            @include max-screen (767px){
+                margin: auto;
+
+            }
+        }
+
+
+
+
+
+
+    }
+    ul{
+        list-style: none;
+        margin-top: 136px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include max-screen (767px){
+            flex-direction: column;
+            margin-top: 36px;
+            align-items: center;
+
+        }
+        
+        .box_abilities{
+            text-align: center;
+            li{
+                width: 60px;
+                margin: auto;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+            }       
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 20px;
+                margin-bottom: 60px;
+                }
+        }
+
+    }
+
+
+
+}
