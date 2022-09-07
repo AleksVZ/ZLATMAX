@@ -6,12 +6,16 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel({
+    $('.slide-one').owlCarousel({
         loop:true,
         margin:0,
         autoplay:true,
+        autoplayTimeout: 10000,
+        autoplaySpeed:2000,
+        mouseDrag: false,
         nav: false,
-        dots:false,
+        dots:true,
+
         navText: [ '', ' ' ],
 
         responsive:{
