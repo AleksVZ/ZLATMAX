@@ -1,0 +1,105 @@
+.catalog{
+    background:  #E5E5E5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .row{
+
+        display: flex;
+        justify-content: space-between;
+    .card_menu{
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        max-width: 500px;
+        width: 100%;
+        height: 293px;
+
+        padding: 30px 0px 0px 30px;
+        margin-bottom: 32px;
+        // display: flex;
+        // justify-content: space-between;
+        h3{
+            margin-bottom: 30px;
+            :hover{
+                @include hover;
+                text-decoration: none;
+            }
+            a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 55px;
+            color: #000000;
+
+        }
+        ::after{
+            display: block;
+            background-image: url('../img/Line_orange.svg');
+            content: '';
+            height: 4px;
+            width: 68px;
+        }
+        }
+
+
+
+
+
+
+        .card_menu_left{
+            display: flex;
+            justify-content: space-between;
+            
+ 
+            ul{
+                ::marker{
+                    color: $colorOrange;
+                }
+                li{
+                    :hover{
+                        @include hover;
+                        text-decoration: none;
+                    }
+                    a{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 40px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        .card_img{
+            // width: 270px;
+            height: 248px;
+            overflow: hidden;
+            position: relative;
+            top: -72px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+  
+    }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
