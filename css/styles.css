@@ -689,6 +689,7 @@ header .nav .nav-links .nav_left {
 .hits {
   background: #E5E5E5;
   padding-top: 15px;
+  padding-bottom: 200px;
 }
 .hits .hits__top__flex {
   display: -webkit-box;
@@ -729,6 +730,20 @@ header .nav .nav-links .nav_left {
   top: -30px;
   right: -213px;
 }
+.hits .hits_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1529px) {
+  .hits .hits_flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .hits .hits_flex .hits_card {
   max-width: 375px;
   width: 100%;
@@ -751,6 +766,12 @@ header .nav .nav-links .nav_left {
 }
 .hits .hits_flex .hits_card h4 {
   text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+  margin-top: 20px;
 }
 .hits .hits_flex .hits_card .hits_card_size {
   display: -webkit-box;
@@ -759,6 +780,12 @@ header .nav .nav-links .nav_left {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
 }
 .hits .hits_flex .hits_card .hits_card_reviews {
   display: -webkit-box;
@@ -767,6 +794,12 @@ header .nav .nav-links .nav_left {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
 }
 .hits .hits_flex .hits_card .hits_card_reviews .hits_card_stars {
   display: -webkit-box;
@@ -786,13 +819,55 @@ header .nav .nav-links .nav_left {
 .hits .hits_flex .hits_card .hits_card_reviews .hits_card_stars li {
   margin-right: 3px;
 }
+.hits .hits_flex .hits_card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 26px;
+}
+.hits .hits_flex .hits_card_price li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+}
+.hits .hits_flex .hits_card_price ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.hits .hits_flex .hits_card_price ul li:last-child ::before {
+  display: block;
+  background-image: url("../img/heart.svg");
+  content: "";
+  background-size: cover;
+  width: 28px;
+  height: 24px;
+  margin-left: 15px;
+}
+.hits .hits_flex .hits_card_price ul li:first-child ::before {
+  display: block;
+  background-image: url("../img/Vesy.svg");
+  content: "";
+  background-size: cover;
+  width: 26px;
+  height: 24px;
+}
 .hits .hits_flex .button a {
   font-size: 18px;
   line-height: 46px;
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 3px;
-  padding: 12px 52px;
+  line-height: 32px;
+  padding: 12px 100px;
   background: #E8AA31;
   -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
           box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);

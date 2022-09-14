@@ -1,6 +1,7 @@
 .hits{
     background: #E5E5E5;
     padding-top: 15px;
+    padding-bottom: 200px;
 
     .hits__top__flex{
         display: flex;
@@ -40,6 +41,11 @@
         }
     }
     .hits_flex{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:1529px) {
+            justify-content: space-around;
+          }
         .hits_card{
             max-width: 375px;
             width: 100%;
@@ -47,6 +53,7 @@
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             padding: 22px 20px;
+
             ul{
                 list-style: none;
             }
@@ -60,14 +67,35 @@
             }
             h4{
                 text-align: left;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 34px;
+                color: #141414;
+                margin-top: 20px;
             }
             .hits_card_size{
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 5px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 34px;
+                color: #ABABAB;
+
             }
             .hits_card_reviews{
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 20px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 34px;
+                color: #ABABAB;
 
                 .hits_card_stars{
                     display: flex;
@@ -90,10 +118,53 @@
             }
 
         }
+        .hits_card_price{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 26px;
+
+            li{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 34px;
+                color: #141414;
+
+            }
+            ul{
+                display: flex;
+                justify-content: end;
+            li:last-child{       
+                ::before{
+                    display: block;
+                    background-image: url('../img/heart.svg');
+                    content: '';
+                    background-size: cover;
+                    width: 28px;
+                    height: 24px;
+                    margin-left: 15px;
+                }
+                }
+                li:first-child{
+                    ::before{
+                        display: block;
+                        background-image: url('../img/Vesy.svg');
+                        content: '';
+                        background-size: cover;
+                        width: 26px;
+                        height: 24px;
+                        
+                    }  
+            }
+
+            }
+        }
         .button{
+            
             a{
             @include Button;
-            padding: 12px 52px;
+            line-height: 32px;
+            padding: 12px 100px;
             background: $colorOrange;
             box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
             margin-left: 15px;
@@ -104,6 +175,7 @@
                 color: $colorOrange;
                 @include hover_border;
                 background: $colorBlack;
+               
             }
             @include max-screen (767px){
                 text-align: center;
