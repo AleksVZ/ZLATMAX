@@ -28,4 +28,36 @@ $(document).ready(function(){
         }
     });
 
+
+});
+$(document).ready(function(){
+
+    $('.slide-two').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay:false,
+        mouseDrag: true,
+        nav: false,
+        dots:true,
+
+
+        navText: [ '', ' ' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1529:{
+                items:4
+            }
+        }
+    });
+
+
 });

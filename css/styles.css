@@ -689,7 +689,7 @@ header .nav .nav-links .nav_left {
 .hits {
   background: #E5E5E5;
   padding-top: 15px;
-  padding-bottom: 200px;
+  padding-bottom: 135px;
 }
 .hits .hits__top__flex {
   display: -webkit-box;
@@ -751,20 +751,6 @@ header .nav .nav-links .nav_left {
   position: relative;
   top: -30px;
   right: -213px;
-}
-.hits .hits_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 1529px) {
-  .hits .hits_flex {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 .hits .hits_flex .hits_card {
   max-width: 375px;
@@ -912,6 +898,44 @@ header .nav .nav-links .nav_left {
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 3px;
+}
+.hits .owl-carousel {
+  margin: auto;
+}
+.hits .owl-carousel .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hits .owl-theme.slide-two .owl-dots {
+  margin-top: 66px;
+  text-align: center;
+}
+.hits .owl-theme.slide-two .owl-dots .owl-dot :hover {
+  background: #E8AA31;
+}
+.hits .owl-theme.slide-two .owl-dots .owl-dot span {
+  width: 25px;
+  height: 5px;
+  margin: 5px 7px;
+  background: #898989;
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 2px;
+}
+.hits .owl-carousel.slide-two .active span {
+  width: 25px;
+  height: 5px;
+  margin: 5px 7px;
+  background: #E8AA31 !important;
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 2px;
 }
 
 * {
