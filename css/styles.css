@@ -699,6 +699,17 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 600px) {
+  .hits .hits__top__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .hits .hits__top__flex h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -707,8 +718,19 @@ header .nav .nav-links .nav_left {
   letter-spacing: 0.05em;
   color: #141414;
 }
+@media (max-width: 600px) {
+  .hits .hits__top__flex h3 {
+    margin-bottom: 20px;
+  }
+}
 .hits .hits__top__flex p {
   margin-right: 30px;
+}
+.hits .hits__top__flex p :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #E8AA31;
+  text-decoration: none;
 }
 .hits .hits__top__flex p a {
   font-family: "Montserrat", sans-serif;
@@ -752,6 +774,12 @@ header .nav .nav-links .nav_left {
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 22px 20px;
+  margin: 15px 5px;
+}
+@media (max-width: 400px) {
+  .hits .hits_flex .hits_card {
+    padding: 10px 10px;
+  }
 }
 .hits .hits_flex .hits_card ul {
   list-style: none;
@@ -860,19 +888,14 @@ header .nav .nav-links .nav_left {
   width: 26px;
   height: 24px;
 }
-.hits .hits_flex .button a {
-  font-size: 18px;
-  line-height: 46px;
-  color: #FFFFFF;
-  text-decoration: none;
-  border-radius: 3px;
-  line-height: 32px;
-  padding: 12px 100px;
+.hits .hits_flex .button {
+  max-width: 335px;
+  width: 100%;
   background: #E8AA31;
   -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
           box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
-  margin-left: 15px;
-  margin-right: 15px;
+  border-radius: 3px;
+  margin: auto;
 }
 .hits .hits_flex .button :hover {
   color: #E8AA31;
@@ -881,10 +904,14 @@ header .nav .nav-links .nav_left {
   border: 1px solid #E8AA31;
   background: #141414;
 }
-@media screen and (max-width: 767px) {
-  .hits .hits_flex .button {
-    text-align: center;
-  }
+.hits .hits_flex .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 * {
@@ -921,4 +948,9 @@ a {
 .container {
   max-width: 1592px;
   margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
