@@ -39,8 +39,6 @@ $(document).ready(function(){
         mouseDrag: true,
         nav: false,
         dots:true,
-
-
         navText: [ '', ' ' ],
 
         responsive:{
@@ -68,6 +66,7 @@ $(document).ready(function(){
         mouseDrag: true,
         nav: false,
         dots:true,
+
         navText: [ '', ' ' ],
 
         responsive:{
@@ -82,6 +81,58 @@ $(document).ready(function(){
             }
         }
     });
+});
+$(document).ready(function(){
 
+    $('.slide-four').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay:false,
+        mouseDrag: true,
+        nav: false,
+        dots:true,
+        navText: [ '', ' ' ],
 
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1529:{
+                items:4
+            }
+        }
+    });
+});
+$(document).ready(function(){
+
+    $('.slide-five').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay:false,
+        mouseDrag: true,
+        nav: false,
+        dots:true,
+        navText: [ '', ' ' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1529:{
+                items:4
+            }
+        }
+    });
 });
