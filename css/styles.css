@@ -863,7 +863,7 @@ header .nav .nav-links .nav_left {
   content: "";
   background-size: cover;
   width: 28px;
-  height: 24px;
+  height: 25px;
   margin-left: 15px;
 }
 .hits .hits_flex .hits_card_price ul li:first-child ::before {
@@ -898,11 +898,12 @@ header .nav .nav-links .nav_left {
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 3px;
+  border: 1px solid transparent;
 }
-.hits .owl-carousel {
+.hits .owl-carousel.slide-two {
   margin: auto;
 }
-.hits .owl-carousel .owl-item {
+.hits .owl-carousel.slide-two .owl-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,6 +929,302 @@ header .nav .nav-links .nav_left {
   border-radius: 2px;
 }
 .hits .owl-carousel.slide-two .active span {
+  width: 25px;
+  height: 5px;
+  margin: 5px 7px;
+  background: #E8AA31 !important;
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 2px;
+}
+
+.novelties {
+  background-image: url("../img/bg_novelties.jpg");
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.novelties .wellcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .novelties .wellcome {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.novelties .wellcome .novelties_left {
+  max-width: 336px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+@media (max-width: 800px) {
+  .novelties .wellcome .novelties_left {
+    width: 100%;
+  }
+}
+.novelties .wellcome .novelties_left h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  mix-blend-mode: 30px;
+}
+.novelties .wellcome .novelties_left P {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 60px;
+}
+.novelties .wellcome .novelties_left .wellcome_link {
+  margin-right: 30px;
+}
+.novelties .wellcome .novelties_left .wellcome_link :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #E8AA31;
+  text-decoration: none;
+}
+.novelties .wellcome .novelties_left .wellcome_link a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #E8AA31;
+}
+.novelties .wellcome .novelties_left .wellcome_link ::after {
+  display: block;
+  background-image: url("../img/Arrow_hits.svg");
+  content: "";
+  background-size: cover;
+  width: 11px;
+  height: 16px;
+  color: #E8AA31;
+  position: relative;
+  top: -30px;
+  right: -213px;
+}
+.novelties .wellcome .novelties_quarusel {
+  width: 70%;
+}
+@media (max-width: 800px) {
+  .novelties .wellcome .novelties_quarusel {
+    width: 100%;
+    margin: auto;
+  }
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card {
+  max-width: 375px;
+  width: 100%;
+  background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 22px 20px;
+  margin: 15px 5px 56px 5px;
+  border: 1px solid transparent;
+}
+@media (max-width: 400px) {
+  .novelties .wellcome .novelties_quarusel .hits_flex .hits_card {
+    padding: 10px 10px;
+  }
+}
+.novelties .wellcome .novelties_quarusel .hits_flex ul {
+  list-style: none;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .img_card {
+  width: 270px;
+  overflow: hidden;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .img_card img {
+  display: block;
+  width: 100%;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex h4 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+  margin-top: 20px;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card_size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card_reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card_reviews .hits_card_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card_reviews .hits_card_stars :before {
+  color: orange;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f005";
+  font-size: 22px;
+}
+.novelties .wellcome .novelties_quarusel .hits_flex .hits_card_reviews .hits_card_stars li {
+  margin-right: 3px;
+}
+.novelties .wellcome .novelties_quarusel .hits_card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 26px;
+}
+.novelties .wellcome .novelties_quarusel .hits_card_price li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+}
+.novelties .wellcome .novelties_quarusel .hits_card_price ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.novelties .wellcome .novelties_quarusel .hits_card_price ul li:last-child ::before {
+  display: block;
+  background-image: url("../img/heart.svg");
+  content: "";
+  background-size: cover;
+  width: 28px;
+  height: 25px;
+  margin-left: 15px;
+}
+.novelties .wellcome .novelties_quarusel .hits_card_price ul li:first-child ::before {
+  display: block;
+  background-image: url("../img/Vesy.svg");
+  content: "";
+  background-size: cover;
+  width: 26px;
+  height: 24px;
+}
+.novelties .wellcome .novelties_quarusel .button {
+  max-width: 335px;
+  width: 100%;
+  background: #E8AA31;
+  -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+          box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+  border-radius: 3px;
+  margin: auto;
+}
+.novelties .wellcome .novelties_quarusel .button :hover {
+  color: #E8AA31;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+  background: #141414;
+}
+.novelties .wellcome .novelties_quarusel .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.owl-carousel.slide-three {
+  margin: auto;
+}
+.owl-carousel.slide-three .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1000px) {
+  .owl-carousel.slide-three .owl-item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+@media (max-width: 800px) {
+  .owl-carousel.slide-three .owl-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.owl-theme.slide-three .owl-dots {
+  margin-top: 66px;
+  text-align: center;
+}
+.owl-theme.slide-three .owl-dots .owl-dot :hover {
+  background: #E8AA31;
+}
+.owl-theme.slide-three .owl-dots .owl-dot span {
+  width: 25px;
+  height: 5px;
+  margin: 5px 7px;
+  background: #898989;
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 2px;
+}
+
+.owl-carousel.slide-three .active span {
   width: 25px;
   height: 5px;
   margin: 5px 7px;

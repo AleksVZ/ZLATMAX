@@ -58,6 +58,30 @@ $(document).ready(function(){
             }
         }
     });
+});
+$(document).ready(function(){
+
+    $('.slide-three').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:false,
+        mouseDrag: true,
+        nav: false,
+        dots:true,
+        navText: [ '', ' ' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+            1100:{
+                items:2
+            },
+            1529:{
+                items:3
+            }
+        }
+    });
 
 
 });

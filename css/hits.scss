@@ -159,7 +159,7 @@
                     content: '';
                     background-size: cover;
                     width: 28px;
-                    height: 24px;
+                    height: 25px;
                     margin-left: 15px;
                 }
                 }
@@ -192,23 +192,18 @@
                 
                
             }
-
-            
             a{
                 display: inline-block;
                 width: 100%;
             @include Button;
-
-
+            border: 1px solid transparent;
             }
-
-
         }
     }
-    .owl-carousel{
+    .owl-carousel.slide-two {
         margin: auto;
         .owl-item{
-            // text-align: -moz-center;
+
             display: flex;
             justify-content: center;
         }
@@ -216,7 +211,6 @@
 
     .owl-theme.slide-two .owl-dots {
         margin-top: 66px;
-
         text-align: center;
     
         .owl-dot {
