@@ -1,0 +1,40 @@
+.tactical_lights {
+  padding-top: 60px;
+  background: #E5E5E5;
+}
+
+.tactical_lights .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1529px) {
+  .tactical_lights .row {
+    justify-content: space-around;
+  }
+}
+
+.tactical_lights .row .tactical_lights_box {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 770px;
+  width: 100%;
+}
+
+.tactical_lights .row .tactical_lights_box .card_img {
+  height: 248px;
+  overflow: hidden;
+  position: relative;
+  top: -72px;
+}
+
+.tactical_lights .row .tactical_lights_box .card_img img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .tactical_lights .row .tactical_lights_box .card_img {
+    display: none;
+  }
+}

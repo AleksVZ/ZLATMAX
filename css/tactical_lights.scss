@@ -1,0 +1,136 @@
+.tactical_lights{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #E5E5E5;
+    
+    .row{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:1550px) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+        .tactical_lights_box{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+            max-width: 770px;
+            width: 100%;
+          
+
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin-bottom: 35px;
+            @media (max-width:650px) {
+                flex-direction: column;
+              }
+    
+
+            .tactical_light_left{
+                padding-left: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 50%;
+                @media (max-width:650px) {
+                    width: 100%;
+                    margin: auto;
+                    padding-top: 30px;
+                    padding-left: 0px;
+                    text-align: center;
+                  }
+        
+
+                h3{
+                    margin-bottom: 30px;
+                    :hover{
+                        @include hover;
+                        text-decoration: none;
+                    }
+                    span{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 55px;
+                    color: #000000;
+                    @media (max-width:500px) {
+                        font-size: 20px;
+                      }
+                }
+                ::after{
+                    display: block;
+                    background-image: url('../img/Line_orange.svg');
+                    content: '';
+                    height: 4px;
+                    width: 68px;
+                    @media (max-width:650px) {
+                        display: none;
+                      }
+                }
+                }
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: #000000;
+                    margin-bottom: 60px;
+
+
+                }
+                .button{
+                    width: 266px;
+                    background: $colorOrange;
+                    box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+                    border-radius: 3px;
+                    // margin: auto;
+                    @media (max-width:650px) {
+                        margin: auto;
+                        width: 100%;
+                      }
+        
+                    :hover{
+                        color: $colorOrange;
+                        @include hover_border;
+                        background: $colorBlack;
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        @include Button;
+                        border: 1px solid transparent;
+                        text-align: center;
+                    }
+                }
+
+
+            }
+            
+            .card_img{
+                width: 50%;
+                @media (max-width:650px) {
+                    width: 100%;
+                    margin: auto;
+                  }
+ 
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+    
+            }
+
+            
+
+
+        }
+
+
+
+    }
+
+    
+
+
+}
