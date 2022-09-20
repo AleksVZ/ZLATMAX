@@ -1740,6 +1740,83 @@ header .nav .nav-links .nav_left {
   border-radius: 2px;
 }
 
+.our_articles {
+  background-color: #E5E5E5;
+  padding-bottom: 60px;
+}
+.our_articles h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #141414;
+  margin-bottom: 30px;
+}
+@media (max-width: 760px) {
+  .our_articles h3 {
+    text-align: center;
+  }
+}
+.our_articles .our_articles_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 1529px) {
+  .our_articles .our_articles_flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.our_articles .our_articles_flex .our_articles_box:nth-child(3) h4 {
+  margin-bottom: 40px;
+}
+.our_articles .our_articles_flex .our_articles_box:nth-child(4) h4 {
+  margin-bottom: 40px;
+}
+.our_articles .our_articles_flex .our_articles_box {
+  max-width: 375px;
+  width: 100%;
+  background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: inherit;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.our_articles .our_articles_flex .our_articles_box .article_img {
+  margin-bottom: 20px;
+}
+.our_articles .our_articles_flex .our_articles_box .article_img img {
+  display: block;
+  width: 100%;
+}
+.our_articles .our_articles_flex .our_articles_box h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 8px;
+}
+.our_articles .our_articles_flex .our_articles_box p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+  padding-left: 30px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
