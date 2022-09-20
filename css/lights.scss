@@ -1,0 +1,211 @@
+.lights{
+    background: #E5E5E5;
+    padding-top: 15px;
+    padding-bottom: 135px;
+
+    .hits__top__flex{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 46px;
+            letter-spacing: 0.05em;
+            color: #141414;
+            @media (max-width:600px) {
+                    margin-bottom: 20px;
+              }
+        }
+        p{
+            margin-right: 30px;
+            :hover{
+                @include hover;
+                text-decoration: none;
+            }
+            a{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 46px;
+                letter-spacing: 0.05em;
+                color: rgba(20, 20, 20, 0.58);
+            }
+            ::after{
+                display: block;
+                background-image: url('../img/Arrow_hits.svg');
+                content: '';
+                background-size: cover;
+                width: 11px;
+                height: 16px;
+                color: $colorOrange;
+                position: relative;
+                top: -30px;
+                right: -213px;
+            }
+        }
+    }
+    .hits_flex{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:1529px) {
+            justify-content: space-around;
+          }
+
+        .hits_card{
+            max-width: 375px;
+            width: 100%;
+            background: #FEFEFE;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 22px 20px;
+            margin: 15px 5px ;
+            @media (max-width:400px) {
+                padding: 10px 10px;
+                // max-width: 85%;
+              }
+
+            ul{
+                list-style: none;
+            }
+            .img_card{
+                width: 270px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+            }
+            h4{
+                text-align: left;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 34px;
+                color: #141414;
+                margin-top: 20px;
+            }
+            .hits_card_size{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 34px;
+                color: #ABABAB;
+
+            }
+            .hits_card_reviews{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 34px;
+                color: #ABABAB;
+
+                .hits_card_stars{
+                    display: flex;
+                    justify-content: flex-start;
+                    
+                    :before{
+                        color: orange;
+                        font-weight: 900;
+                        font-family: "Font Awesome 6 Free";
+                        content: "\f005";
+                        font-size: 22px;
+                    }
+                    li{
+                        margin-right: 3px;
+                    }
+
+                }
+
+
+            }
+
+        }
+        .hits_card_price{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 26px;
+
+            li{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 34px;
+                color: #141414;
+
+            }
+            ul{
+                display: flex;
+                justify-content: end;
+            li:last-child{       
+                ::before{
+                    display: block;
+                    background-image: url('../img/heart.svg');
+                    content: '';
+                    background-size: cover;
+                    width: 28px;
+                    height: 25px;
+                    margin-left: 15px;
+                }
+                }
+                li:first-child{
+                    ::before{
+                        display: block;
+                        background-image: url('../img/Vesy.svg');
+                        content: '';
+                        background-size: cover;
+                        width: 26px;
+                        height: 24px;
+                        
+                    }  
+            }
+
+            }
+        }
+        .button{
+            max-width: 335px;
+            width: 100%;
+            background: $colorOrange;
+            box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+            border-radius: 3px;
+            margin: auto;
+
+            :hover{
+                color: $colorOrange;
+                @include hover_border;
+                background: $colorBlack;
+                
+               
+            }
+            a{
+                display: inline-block;
+                width: 100%;
+            @include Button;
+            border: 1px solid transparent;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}
