@@ -2194,6 +2194,38 @@ header .nav .nav-links .nav_left {
   border: 1px solid transparent;
 }
 
+.overFooter {
+  background-image: url("../img/BG_overFooter.jpg");
+  background-size: contain;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.overFooter h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #E8AA31;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .overFooter h3 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+.overFooter p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
