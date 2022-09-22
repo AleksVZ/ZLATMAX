@@ -2226,6 +2226,169 @@ header .nav .nav-links .nav_left {
   text-align: justify;
 }
 
+.page_down {
+  background-color: #141414;
+  padding-top: 102px;
+  padding-bottom: 50px;
+}
+.page_down .row_page_down .page_down_box ul {
+  list-style: none;
+}
+.page_down .row_page_down .page_down_box ul :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #E8AA31;
+  text-decoration: none;
+}
+.page_down .row_page_down .page_down_box ul a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.page_down .row_page_down .page_down_box ul li :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #E8AA31;
+  text-decoration: none;
+}
+.page_down .row_page_down .page_down_box ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.page_down hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 35px;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul {
+  list-style: none;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul :hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #E8AA31;
+  text-decoration: none;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul li {
+  margin-bottom: 20px;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul li span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.page_down .row_page_down_contacts .page_down_contacts_box ul li span :hover {
+  text-decoration: none;
+  color: rgba(226, 14, 14, 0.8);
+}
+.page_down .row_page_down_contacts .footer_social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page_down .row_page_down_contacts .footer_social_icons li {
+  margin-right: 22px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li a {
+  background-image: url("../img/F.svg");
+  content: "";
+  width: 41px;
+  height: 43px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li:nth-child(2) {
+  margin-right: 22px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li:nth-child(2) a {
+  background-image: url("../img/V.svg");
+  content: "";
+  width: 41px;
+  height: 42px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li:nth-child(3) {
+  margin-right: 22px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li:nth-child(3) a {
+  background-image: url("../img/T.svg");
+  content: "";
+  width: 40px;
+  height: 41px;
+}
+.page_down .row_page_down_contacts .footer_social_icons li:nth-child(4) a {
+  background-image: url("../img/W.svg");
+  content: "";
+  width: 42px;
+  height: 43px;
+}
+.page_down .row_page_down_contacts .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page_down .row_page_down_contacts .form-group .form-control {
+  border-radius: 3px 0 0 3px;
+  line-height: 24px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.05);
+}
+.page_down .row_page_down_contacts .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #E8AA31;
+}
+.page_down .row_page_down_contacts .form-group .btn.btn-primary {
+  border-radius: 0px 3px 3px 0;
+  margin-left: -1px;
+  line-height: 24px;
+  border: 1px solid #E8AA31;
+  background: #E8AA31;
+}
+.page_down .row_page_down_contacts .form-group .form-check-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.page_down .inform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page_down .inform p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
