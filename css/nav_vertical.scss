@@ -1,0 +1,52 @@
+.nav_vertical{
+    background: #E5E5E5;
+    padding-top: 30px;
+    padding-bottom: 250px;
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #141414;
+    }
+
+    .breadcrumbs {
+
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color:  #ABABAB;
+            
+            &:hover{
+                @include hover;
+                text-decoration: none;
+            }
+            :after {
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                font-size: 13px;
+                content: "\f054";
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+
+        }
+        .last-crumb {
+            display: inline-block;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $colorOrange;
+
+        }
+
+    
+    }
+
+}

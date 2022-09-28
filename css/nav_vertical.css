@@ -1,0 +1,47 @@
+.nav_vertical {
+  background: #E5E5E5;
+  padding-top: 30px;
+  padding-bottom: 250px;
+}
+
+.nav_vertical h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #141414;
+}
+
+.nav_vertical a:link,
+.nav_vertical a:visited,
+.nav_vertical a:hover,
+.nav_vertical a:active {
+  color: #61BDF0;
+  text-decoration: none;
+}
+
+.nav_vertical .breadcrumbs a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+  opacity: 0.5;
+}
+
+.nav_vertical .breadcrumbs .breadcrumbs .last-crumb {
+  display: inline-block;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+  opacity: 0.5;
+}
+
+.nav_vertical .breadcrumbs
+.breadcr
+.hidden {
+  display: none;
+}

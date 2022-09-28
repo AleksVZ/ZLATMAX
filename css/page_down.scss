@@ -6,6 +6,7 @@
     .row_page_down{
 
         .page_down_box{
+            margin-bottom: 35px;
             ul{
                 list-style: none;
                 :hover{
@@ -46,7 +47,9 @@
         margin-bottom: 35px;
     }
     .row_page_down_contacts{
+        margin-bottom: 35px;
         .page_down_contacts_box{
+           
             ul{
                 list-style: none;
 
@@ -178,12 +181,22 @@
     .inform{
         display: flex;
         justify-content: space-between;
+        @media (max-width:1550px) {
+            flex-direction: column;
+            // align-items: center;
+            text-align: center;
+          }
         p{
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 14px;
             line-height: 27px;
             color: rgba(255, 255, 255, 0.8);
+            br{
+                @media (max-width:1550px) {
+                    display: none;
+                  }
+            }
 
         }
     }

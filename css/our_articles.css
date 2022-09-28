@@ -59,7 +59,7 @@
   width: 100%;
 }
 
-.our_articles .our_articles_flex .our_articles_box h4 {
+.our_articles .our_articles_flex .our_articles_box h4 a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 20px;

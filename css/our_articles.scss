@@ -23,6 +23,7 @@
         @media (max-width:1529px) {
             justify-content: space-around;
           }
+          
 
         .our_articles_box:nth-child(3){
             h4{
@@ -47,7 +48,6 @@
             padding: inherit;
             padding-bottom: 20px;
             margin-bottom: 25px;
-
             .article_img{
                 margin-bottom: 20px;
                 img{
@@ -57,15 +57,22 @@
             
             }
             h4{
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 34px;
-                color: #141414;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin-bottom: 8px;
-
+                :hover{
+                    @include hover;
+                    text-decoration: none;
+                }
+                a{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 34px;
+                    color: #141414;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-bottom: 8px;
+                    
+                }
+               
             }
             p{
                 font-family: 'Montserrat', sans-serif;
