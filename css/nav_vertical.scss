@@ -2,17 +2,29 @@
     background: #E5E5E5;
     padding-top: 30px;
     padding-bottom: 250px;
-
     h3{
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
         color: #141414;
+        margin-bottom: 25px;
     }
+    .nav_vertical_breadcrumbs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        @include max-screen (900px){
+            display: block;
+        }
+    
+
 
     .breadcrumbs {
-
+        @include max-screen (900px){
+            margin-bottom: 30px;
+        }
         a{
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
@@ -32,8 +44,6 @@
                 margin-left: 5px;
                 margin-right: 5px;
             }
-            
-
         }
         .last-crumb {
             display: inline-block;
@@ -43,10 +53,145 @@
             font-size: 16px;
             line-height: 20px;
             color: $colorOrange;
+        }
+    }
+    .sort{
+        max-width: 374px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        #sort{
+            border: 1px solid rgba(4, 4, 4, 0.3);
+            border-radius: 3px;
+            max-width: 374px;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            &:hover{
+                @include hover_border;
+            }
+
+         option{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.5);
+
 
         }
 
-    
+
+
+        }
     }
+    }
+    .nav_vertical_main{
+
+        .nav_filters{
+            width: 375px;
+            background: #FEFEFE;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+            border: 1px solid black;
+            padding-bottom: 50px;
+            h4{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                background: #000;
+                padding: 23px 30px;
+            }
+            h5{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #141414;
+                padding: 30px;
+            }
+            p{
+                padding: 30px;
+                text-align: center;
+
+                #amount{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #141414;
+                    border: none;
+                    margin: auto;
+                    text-align: center;
+
+
+                }
+            }
+            #slider-range{
+                width: 83%;
+                margin: auto;
+                height: 6px;
+
+            }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+                border: none;
+                background: #070707;
+                font-weight: normal;
+                color: #454545;
+                border-radius: 50%;
+                border-radius: 50%;
+                position: absolute;
+                top: -7px;
+              }
+              .ui-slider .ui-slider-range {
+                background-color: #070707;
+                border: none;
+              }
+              .ui-widget.ui-widget-content {
+                border: none;
+                background-color:#E8AA31;
+              }
+
+
+
+
+
+
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

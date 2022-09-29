@@ -2426,21 +2426,44 @@ header .nav .nav-links .nav_left {
   font-size: 24px;
   line-height: 29px;
   color: #141414;
+  margin-bottom: 25px;
 }
-.nav_vertical .breadcrumbs a {
+.nav_vertical .nav_vertical_breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 900px) {
+  .nav_vertical .nav_vertical_breadcrumbs {
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav_vertical .nav_vertical_breadcrumbs .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}
+.nav_vertical .nav_vertical_breadcrumbs .breadcrumbs a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #ABABAB;
 }
-.nav_vertical .breadcrumbs a:hover {
+.nav_vertical .nav_vertical_breadcrumbs .breadcrumbs a:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #E8AA31;
   text-decoration: none;
 }
-.nav_vertical .breadcrumbs a :after {
+.nav_vertical .nav_vertical_breadcrumbs .breadcrumbs a :after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 13px;
@@ -2448,7 +2471,7 @@ header .nav .nav-links .nav_left {
   margin-left: 5px;
   margin-right: 5px;
 }
-.nav_vertical .breadcrumbs .last-crumb {
+.nav_vertical .nav_vertical_breadcrumbs .breadcrumbs .last-crumb {
   display: inline-block;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -2456,6 +2479,102 @@ header .nav .nav-links .nav_left {
   font-size: 16px;
   line-height: 20px;
   color: #E8AA31;
+}
+.nav_vertical .nav_vertical_breadcrumbs .sort {
+  max-width: 374px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav_vertical .nav_vertical_breadcrumbs .sort #sort {
+  border: 1px solid rgba(4, 4, 4, 0.3);
+  border-radius: 3px;
+  max-width: 374px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav_vertical .nav_vertical_breadcrumbs .sort #sort:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+}
+.nav_vertical .nav_vertical_breadcrumbs .sort #sort option {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav_vertical .nav_vertical_main .nav_filters {
+  width: 375px;
+  background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  padding-bottom: 50px;
+}
+.nav_vertical .nav_vertical_main .nav_filters h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #000;
+  padding: 23px 30px;
+}
+.nav_vertical .nav_vertical_main .nav_filters h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #141414;
+  padding: 30px;
+}
+.nav_vertical .nav_vertical_main .nav_filters p {
+  padding: 30px;
+  text-align: center;
+}
+.nav_vertical .nav_vertical_main .nav_filters p #amount {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+  border: none;
+  margin: auto;
+  text-align: center;
+}
+.nav_vertical .nav_vertical_main .nav_filters #slider-range {
+  width: 83%;
+  margin: auto;
+  height: 6px;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-button, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #070707;
+  font-weight: normal;
+  color: #454545;
+  border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
+  background-color: #070707;
+  border: none;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
+  border: none;
+  background-color: #E8AA31;
 }
 
 * {

@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -402,17 +405,56 @@
 <section class="nav_vertical">
     <div class="container">
         <h3>Разделочные ножи</h3>
-        <nav class="breadcrumbs">
-            <a href="#"><span>Главная</span></a> 
-            <a href="#"><span>Категории ножей</span></a> 
-            <span class="last-crumb">Разделочные ножи</span>
-        </nav>
+        <div class="nav_vertical_breadcrumbs">
+            <nav class="breadcrumbs">
+                <a href="#"><span>Главная</span></a> 
+                <a href="#"><span>Категории ножей</span></a> 
+                <span class="last-crumb">Разделочные ножи</span>
+            </nav>
+            <div class="sort">
+                <label for="sort"></label>
+                <select name="sort" id="sort">
+                    <option selected>По популятности</option>
+                    <option>По возрастанию цены</option>
+                    <option>По уменьшению цены</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="nav_vertical_main">
+            <div class="nav_filters">
+                <h4>Фильтр товаров</h4>
+                <h5>Цена</h5>
+
+                <p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount">
+                </p>
+                   
+                  <div id="slider-range"></div>
+            </div>
+
+            <div class="card_box">
+
+                
+
+            </div>
+
+        </div>
+
 
 
 
 
     </div>
 </section>
+
+<p>
+    <label for="amount">Price range:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  </p>
+   
+  <div id="slider-range"></div>
 
 
 
@@ -557,6 +599,9 @@
 src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 
 <script src="js/bootstrap.js"></script>
