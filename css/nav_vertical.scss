@@ -166,14 +166,16 @@
               }
         }
         .sort_production{
-            #sort_production_slideToggle {
-                transition: all 1s linear;
+
+              .span_icon {
+                display: inline-block;
+                transition: transform .2s;
+                margin-left: 122px;
+                font-size: 18px;
               }
-              
-              #sort_production_slideToggle.transform {
+              .span_icon.active {
                 transform: rotate(180deg);
               }
-
             h4{
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
@@ -183,17 +185,14 @@
                 background: #000;
                 padding: 23px 30px;
                 
-
-
-                
-                &::after{
-                    font-family: "Font Awesome 6 Free";
-                    font-weight: 900;
-                    content: "\f078";
-                    color: white;
-                    font-size: 18px;
-                    margin-left: 137px;
-                }
+                // &::after{
+                //     font-family: "Font Awesome 6 Free";
+                //     font-weight: 900;
+                //     content: "\f078";
+                //     color: white;
+                //     font-size: 18px;
+                //     margin-left: 137px;
+                // }
             }
             ul{
                 list-style: none;

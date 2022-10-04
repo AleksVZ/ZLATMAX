@@ -171,3 +171,7 @@ $( "#sort_production_slideToggle" ).click(function() {
         });
     });
 
+    $('h4#sort_production_slideToggle').click(function (e) {
+        e.preventDefault();
+        $(this).find('span.span_icon').toggleClass('active');
+    });
