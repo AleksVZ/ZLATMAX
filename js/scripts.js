@@ -137,7 +137,7 @@ $(document).ready(function(){
     });
 });
 
-//! ______________
+// Price-slider
 $( function() {
     $( "#slider-range" ).slider({
       range: true,
@@ -145,9 +145,29 @@ $( function() {
       max: 5000,
       values: [ 75, 300 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val(ui.values[ 0 ] + "  руб." + "     -     " + ui.values[ 1 ] + "  руб." );
+        $( "#amount" ).val(ui.values[ 0 ] + "  руб." + "  |  " + ui.values[ 1 ] + "  руб." );
       }
     });
-    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + "  руб." + "     -     " + 
+    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + "  руб." + "  |  " + 
        $( "#slider-range" ).slider( "values", 1 ) + "  руб." );
   } );
+
+  $( ".sort_production_checkbox" ).click(function() {
+    $( this ).slideUp();
+  });
+
+
+// ф-ция Toggle при клике
+$(".production_input").hide();
+$( "#sort_production_slideToggle" ).click(function() {
+    $( ".production_input" ).slideToggle();
+  });
+
+
+// Изменение цвета по клику
+    $(document).ready(function() {
+        $("#sort_production_slideToggle").click(function() {
+            $(this).css('color', 'orange');
+        });
+    });
+

@@ -2514,7 +2514,7 @@ header .nav .nav-links .nav_left {
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
-.nav_vertical .nav_vertical_main .nav_filters {
+.nav_vertical .nav_vertical_main {
   width: 375px;
   background: #FEFEFE;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -2537,10 +2537,10 @@ header .nav .nav-links .nav_left {
   font-size: 20px;
   line-height: 24px;
   color: #141414;
-  padding: 30px;
+  padding: 20px;
 }
 .nav_vertical .nav_vertical_main .nav_filters p {
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 .nav_vertical .nav_vertical_main .nav_filters p #amount {
@@ -2553,10 +2553,14 @@ header .nav .nav-links .nav_left {
   margin: auto;
   text-align: center;
 }
+.nav_vertical .nav_vertical_main .nav_filters p #amount:focus {
+  outline: none;
+}
 .nav_vertical .nav_vertical_main .nav_filters #slider-range {
   width: 83%;
   margin: auto;
   height: 6px;
+  margin-bottom: 50px;
 }
 .nav_vertical .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-button, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
   border: none;
@@ -2575,6 +2579,77 @@ header .nav .nav-links .nav_left {
 .nav_vertical .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
   border: none;
   background-color: #E8AA31;
+}
+.nav_vertical .nav_vertical_main .sort_production #sort_production_slideToggle {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.nav_vertical .nav_vertical_main .sort_production #sort_production_slideToggle.transform {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.nav_vertical .nav_vertical_main .sort_production h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #000;
+  padding: 23px 30px;
+}
+.nav_vertical .nav_vertical_main .sort_production h4::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  font-size: 18px;
+  margin-left: 137px;
+}
+.nav_vertical .nav_vertical_main .sort_production ul {
+  list-style: none;
+  padding-left: 30px;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #141414;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input label span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E8AA31;
+  margin-left: 15px;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] {
+  display: none;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+  content: "\f096";
+  margin-right: 10px;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  color: #E8AA31;
+}
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
 }
 
 * {

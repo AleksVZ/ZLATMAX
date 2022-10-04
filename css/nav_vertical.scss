@@ -92,14 +92,13 @@
     }
     }
     .nav_vertical_main{
-
-        .nav_filters{
             width: 375px;
             background: #FEFEFE;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-
             border: 1px solid black;
             padding-bottom: 50px;
+        .nav_filters{
+            
             h4{
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
@@ -115,12 +114,11 @@
                 font-size: 20px;
                 line-height: 24px;
                 color: #141414;
-                padding: 30px;
+                padding: 20px;
             }
             p{
-                padding: 30px;
+                padding: 10px;
                 text-align: center;
-
                 #amount{
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 500;
@@ -130,14 +128,18 @@
                     border: none;
                     margin: auto;
                     text-align: center;
-
-
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
+
+
             #slider-range{
                 width: 83%;
                 margin: auto;
                 height: 6px;
+                margin-bottom: 50px;
 
             }
             .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -149,6 +151,10 @@
                 border-radius: 50%;
                 position: absolute;
                 top: -7px;
+                // &:focus{
+                //     outline: 0;
+                // }
+
               }
               .ui-slider .ui-slider-range {
                 background-color: #070707;
@@ -158,40 +164,111 @@
                 border: none;
                 background-color:#E8AA31;
               }
+        }
+        .sort_production{
+            #sort_production_slideToggle {
+                transition: all 1s linear;
+              }
+              
+              #sort_production_slideToggle.transform {
+                transform: rotate(180deg);
+              }
+
+            h4{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                background: #000;
+                padding: 23px 30px;
+                
 
 
+                
+                &::after{
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    content: "\f078";
+                    color: white;
+                    font-size: 18px;
+                    margin-left: 137px;
+                }
+            }
+            ul{
+                list-style: none;
+                padding-left: 30px;
+            }
 
+        .production_input{
+            label{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+                color: #141414;
+                span{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #E8AA31;
+                    margin-left: 15px;
+                }
+            }
+            input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+            input[type=checkbox] + label:before {
+            font-family: FontAwesome;
+            display: inline-block;
+            }
 
+            input[type=checkbox] + label:before { content: "\f096"; margin-right: 10px;} /* unchecked icon */
+            input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
 
-
-
-
-
+            input[type=checkbox]:checked + label:before { content: "\f046"; color:#E8AA31; } /* checked icon */
+            input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
 
         }
 
-    }
 
 
 
 
 
+            }
 
 
 
 
+            
 
 
-
-
-
-
-
-
-
-
-
+            }
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
