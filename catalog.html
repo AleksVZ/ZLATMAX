@@ -423,20 +423,43 @@
 
 
         <div class="nav_vertical_main">
+
             <div class="nav_filters">
-                <h4>Фильтр товаров</h4>
-                <h5>Цена</h5>
-                <p>
-                    <label for="amount"></label>
-                    <input type="text" id="amount">
-                </p> 
-                <div id="slider-range"></div>
-            </div>
+                <h4>Цена, руб</h4> 
+
+            <form name="form_Price_length" action="#" method="post">      
+                <div class="clearfix">
+                    <div class="form-group clearfix">
+                        <div class="amountPrice-box">
+                            <div class="col-sm-6">
+                                <label for="amountPrice-from">
+                                    <!-- From:  -->
+                                </label>
+                                <input type="text" id="amountPrice-from" onkeypress="return isNumberKey(event)" value="6963145">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="amountPrice-to">
+                                    <!-- To:  -->
+                                </label>
+                                <input type="text" id="amountPrice-to" onkeypress="return isNumberKey(event)" value="330000005">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="form-group clearfix">
+                        <label>
+                            <!-- Общая длина, мм -->
+                        </label>
+                        <div id="slider-container-price"></div>
+                    </div>
+                </div>
+            
+            </form>      
+        </div>
 
             <div class="sort_production">
                     <h4 id="sort_production_slideToggle">Производство
                         <!-- <span class="name_link"></span> -->
-                        <span class="span_icon"><i class="fa-solid fa-angle-down"></i></span>
+                        <span class="span_icon"></span>
                     </h4> 
                     
 
@@ -511,6 +534,273 @@
 
 
             </div>
+
+            <div class="sort_production">
+                <h4 id="sort_production_slideToggle_2">Сталь
+                    <!-- <span class="name_link"></span> -->
+                    <span class="span_icon_2"></span>
+                </h4> 
+                
+
+                <ul>
+                    <li class="production_input_2">
+                        <input id="box21" type="checkbox" />
+                        <label for="box21">100Х13М<span>(250)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box22" type="checkbox" />
+                        <label for="box22">110Х18М-ШД<span>(25)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box23" type="checkbox" />
+                        <label for="box23">40Х10С2М (ЭИ-107)<span>(265)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box24" type="checkbox" />
+                        <label for="box24">50Х14МФ<span>(18)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box25" type="checkbox" />
+                        <label for="box25">95Х18<span>(170)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box26" type="checkbox" />
+                        <label for="box26">AUS-8<span>(95)</span></label>
+                    </li>
+
+                    <li class="production_input_2">
+                        <input id="box27" type="checkbox" />
+                        <label for="box27">ELMAX<span>(48)</span></label>
+                    </li>
+                    
+                    <li class="production_input_2">
+                        <input id="box28" type="checkbox" />
+                        <label for="box28">RWL-34<span>(26)</span></label>
+                    </li>
+                    <li class="production_input_2">
+                        <input id="box29" type="checkbox" />
+                        <label for="box29">Дамаск<span>(69)</span></label>
+                    </li>
+                    <li class="production_input_2">
+                        <input id="box30" type="checkbox" />
+                        <label for="box30">К340<span>(74)</span></label>
+                    </li>
+                    <li class="production_input_2">
+                        <input id="box31" type="checkbox" />
+                        <label for="box31">Литой булат<span>(30)</span></label>
+                    </li>
+                    <li class="production_input_2">
+                        <input id="box33" type="checkbox" />
+                        <label for="box33">М390<span>(18)</span></label>
+                    </li>            
+                </ul>
+
+
+
+            </div>
+
+            <div class="sort_production">
+                <h4 id="sort_production_slideToggle_3">Рукоять
+                    <!-- <span class="name_link"></span> -->
+                    <span class="span_icon_3"></span>
+                </h4> 
+                
+
+                <ul>
+                    <li class="production_input_3">
+                        <input id="box41" type="checkbox" />
+                        <label for="box41">Mercorne<span>(250)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box42" type="checkbox" />
+                        <label for="box42">Березовый кап<span>(25)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box43" type="checkbox" />
+                        <label for="box43">Бубинго<span>(265)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box44" type="checkbox" />
+                        <label for="box44">Граб<span>(18)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box45" type="checkbox" />
+                        <label for="box45">Дуб<span>(170)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box46" type="checkbox" />
+                        <label for="box46">Кап<span>(95)</span></label>
+                    </li>
+
+                    <li class="production_input_3">
+                        <input id="box47" type="checkbox" />
+                        <label for="box47">Комбинированная<span>(48)</span></label>
+                    </li>
+                    
+                    <li class="production_input_3">
+                        <input id="box48" type="checkbox" />
+                        <label for="box48">Каштан<span>(26)</span></label>
+                    </li>
+                    <li class="production_input_3">
+                        <input id="box49" type="checkbox" />
+                        <label for="box49">Квартопрен<span>(69)</span></label>
+                    </li>
+                    <li class="production_input_3">
+                        <input id="box50" type="checkbox" />
+                        <label for="box50">Кожа-Металл<span>(74)</span></label>
+                    </li>
+                    <li class="production_input_3">
+                        <input id="box51" type="checkbox" />
+                        <label for="box51">Комбинированная<span>(30)</span></label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sort_production">
+                <h4 id="sort_production_slideToggle_4">Гарда и тыльник
+                    <!-- <span class="name_link"></span> -->
+                    <span class="span_icon_4"></span>
+                </h4> 
+                
+
+                <ul>
+                    <li class="production_input_4">
+                        <input id="box61" type="checkbox" />
+                        <label for="box61">Алюминий<span>(250)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box62" type="checkbox" />
+                        <label for="box62">Латунь<span>(25)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box63" type="checkbox" />
+                        <label for="box63">Литой Барс<span>(265)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box64" type="checkbox" />
+                        <label for="box64">Литой Пума<span>(18)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box65" type="checkbox" />
+                        <label for="box65">Литье<span>(170)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box66" type="checkbox" />
+                        <label for="box66">Металлический<span>(95)</span></label>
+                    </li>
+
+                    <li class="production_input_4">
+                        <input id="box67" type="checkbox" />
+                        <label for="box67">Нержавеющая сталь<span>(48)</span></label>
+                    </li>
+                    
+                    <li class="production_input_4">
+                        <input id="box68" type="checkbox" />
+                        <label for="box68">Текстолит<span>(26)</span></label>
+                    </li>
+                    <li class="production_input_4">
+                        <input id="box69" type="checkbox" />
+                        <label for="box69">Комбинированная<span>(69)</span></label>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="sort_production">
+                <h4 id="sort_production_slideToggle_5">Золочение
+                    <!-- <span class="name_link"></span> -->
+                    <span class="span_icon_5"></span>
+                </h4> 
+                
+
+                <ul>
+                    <li class="production_input_5">
+                        <input id="box81" type="checkbox" />
+                        <label for="box81">Золочение клинка<span>(250)</span></label>
+                    </li>
+
+                    <li class="production_input_5">
+                        <input id="box82" type="checkbox" />
+                        <label for="box82">Золочение рисунка на клинке<span>(25)</span></label>
+                    </li>
+                </ul>
+            </div>
+
+            <!--?  _________ -->
+
+            <div class="filter-project sort_production">
+                    <h4 id="sort_production_slideToggle_6">Общая длина, мм
+                        <!-- <span class="name_link"></span> -->
+                        <span class="span_icon_6"></span>
+                    </h4> 
+
+                <form name="form_length" action="#" method="post" class="production_input_6" >      
+                    <div class="clearfix">
+                        <div class="form-group clearfix">
+                            <div class="amount-box">
+                                <div class="col-sm-6">
+                                    <label for="amount-from">
+                                        <!-- From:  -->
+                                    </label>
+                                    <input type="text" id="amount-from" onkeypress="return isNumberKey(event)" value="696314">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="amount-to">
+                                        <!-- To:  -->
+                                    </label>
+                                    <input type="text" id="amount-to" onkeypress="return isNumberKey(event)" value="33000000">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group clearfix">
+                            <label>
+                                <!-- Общая длина, мм -->
+                            </label>
+                            <div id="slider-container"></div>
+                        </div>
+                    </div>
+                
+                </form>      
+            </div>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2515,12 +2515,64 @@ header .nav .nav-links .nav_left {
   color: rgba(0, 0, 0, 0.5);
 }
 .nav_vertical .nav_vertical_main {
-  width: 375px;
+  max-width: 375px;
+  width: 100%;
   background: #FEFEFE;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
   padding-bottom: 50px;
+}
+.nav_vertical .nav_vertical_main .nav_filters #slider-container-price {
+  max-width: 85%;
+  margin: auto;
+  height: 6px;
+  margin-bottom: 50px;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-button, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #070707;
+  font-weight: normal;
+  color: #454545;
+  border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-button:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+          box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
+  background-color: #070707;
+  border: none;
+}
+.nav_vertical .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
+  border: none;
+  background-color: #E8AA31;
+}
+.nav_vertical .nav_vertical_main .nav_filters .filter-project {
+  max-width: 600px;
+  background: #FEFEFE;
+}
+.nav_vertical .nav_vertical_main .nav_filters .amountPrice-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .nav_vertical_main .nav_filters .amountPrice-box input[type=text], .nav_vertical .nav_vertical_main .nav_filters .amountPrice-box input[type=text] {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
 }
 .nav_vertical .nav_vertical_main .nav_filters h4 {
   font-family: "Montserrat", sans-serif;
@@ -2530,31 +2582,6 @@ header .nav .nav-links .nav_left {
   color: #FFFFFF;
   background: #000;
   padding: 23px 30px;
-}
-.nav_vertical .nav_vertical_main .nav_filters h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #141414;
-  padding: 20px;
-}
-.nav_vertical .nav_vertical_main .nav_filters p {
-  padding: 10px;
-  text-align: center;
-}
-.nav_vertical .nav_vertical_main .nav_filters p #amount {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #141414;
-  border: none;
-  margin: auto;
-  text-align: center;
-}
-.nav_vertical .nav_vertical_main .nav_filters p #amount:focus {
-  outline: none;
 }
 .nav_vertical .nav_vertical_main .nav_filters #slider-range {
   width: 83%;
@@ -2580,18 +2607,32 @@ header .nav .nav-links .nav_left {
   border: none;
   background-color: #E8AA31;
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon {
+.nav_vertical .nav_vertical_main .sort_production {
+  position: relative;
+}
+.nav_vertical .nav_vertical_main .sort_production .span_icon, .nav_vertical .nav_vertical_main .sort_production .span_icon_2, .nav_vertical .nav_vertical_main .sort_production .span_icon_3, .nav_vertical .nav_vertical_main .sort_production .span_icon_4, .nav_vertical .nav_vertical_main .sort_production .span_icon_5, .nav_vertical .nav_vertical_main .sort_production .span_icon_6 {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  margin-left: 122px;
-  font-size: 18px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon.active {
+.nav_vertical .nav_vertical_main .sort_production .span_icon::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_2::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_3::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_4::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_5::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_6::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  font-size: 16px;
+}
+.nav_vertical .nav_vertical_main .sort_production .span_icon.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_2.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_3.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_4.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_5.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_6.active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.nav_vertical .nav_vertical_main .sort_production .span_icon.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_2.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_3.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_4.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_5.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_6.active::after {
+  color: orange;
 }
 .nav_vertical .nav_vertical_main .sort_production h4 {
   font-family: "Montserrat", sans-serif;
@@ -2606,20 +2647,20 @@ header .nav .nav-links .nav_left {
   list-style: none;
   padding-left: 30px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input {
+.nav_vertical .nav_vertical_main .sort_production .production_input, .nav_vertical .nav_vertical_main .sort_production .production_input_2, .nav_vertical .nav_vertical_main .sort_production .production_input_3, .nav_vertical .nav_vertical_main .sort_production .production_input_4, .nav_vertical .nav_vertical_main .sort_production .production_input_5 {
   /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input label {
+.nav_vertical .nav_vertical_main .sort_production .production_input label, .nav_vertical .nav_vertical_main .sort_production .production_input_2 label, .nav_vertical .nav_vertical_main .sort_production .production_input_3 label, .nav_vertical .nav_vertical_main .sort_production .production_input_4 label, .nav_vertical .nav_vertical_main .sort_production .production_input_5 label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #141414;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input label span {
+.nav_vertical .nav_vertical_main .sort_production .production_input label span, .nav_vertical .nav_vertical_main .sort_production .production_input_2 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_3 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_4 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_5 label span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -2627,26 +2668,77 @@ header .nav .nav-links .nav_left {
   color: #E8AA31;
   margin-left: 15px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] {
   display: none;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
   content: "\f096";
   margin-right: 10px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
   letter-spacing: 0px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before {
   content: "\f046";
   color: #E8AA31;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before {
+.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
+}
+.nav_vertical #slider-container {
+  max-width: 85%;
+  margin: auto;
+  height: 6px;
+  margin-bottom: 50px;
+}
+.nav_vertical .ui-state-default, .nav_vertical .ui-widget-content .ui-state-default, .nav_vertical .ui-widget-header .ui-state-default, .nav_vertical .ui-button, .nav_vertical html .ui-button.ui-state-disabled:hover, .nav_vertical html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #070707;
+  font-weight: normal;
+  color: #454545;
+  border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+}
+.nav_vertical .ui-state-default:focus, .nav_vertical .ui-widget-content .ui-state-default:focus, .nav_vertical .ui-widget-header .ui-state-default:focus, .nav_vertical .ui-button:focus, .nav_vertical html .ui-button.ui-state-disabled:hover:focus, .nav_vertical html .ui-button.ui-state-disabled:active:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+          box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+}
+.nav_vertical .ui-slider .ui-slider-range {
+  background-color: #070707;
+  border: none;
+}
+.nav_vertical .ui-widget.ui-widget-content {
+  border: none;
+  background-color: #E8AA31;
+}
+.nav_vertical .filter-project {
+  max-width: 600px;
+  background: #FEFEFE;
+}
+.nav_vertical .amount-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .amount-box input[type=text], .nav_vertical .amount-box input[type=text] {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
 }
 
 * {

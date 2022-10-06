@@ -138,23 +138,23 @@ $(document).ready(function(){
 });
 
 // Price-slider
-$( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 5000,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val(ui.values[ 0 ] + "  руб." + "  |  " + ui.values[ 1 ] + "  руб." );
-      }
-    });
-    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + "  руб." + "  |  " + 
-       $( "#slider-range" ).slider( "values", 1 ) + "  руб." );
-  } );
+// $( function() {
+//     $( "#slider-range" ).slider({
+//       range: true,
+//       min: 0,
+//       max: 5000,
+//       values: [ 75, 300 ],
+//       slide: function( event, ui ) {
+//         $( "#amount" ).val(ui.values[ 0 ] + "  руб." + "  |  " + ui.values[ 1 ] + "  руб." );
+//       }
+//     });
+//     $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + "  руб." + "  |  " + 
+//        $( "#slider-range" ).slider( "values", 1 ) + "  руб." );
+//   } );
 
-  $( ".sort_production_checkbox" ).click(function() {
-    $( this ).slideUp();
-  });
+//   $( ".sort_production_checkbox" ).click(function() {
+//     $( this ).slideUp();
+//   });
 
 
 // ф-ция Toggle при клике
@@ -165,13 +165,107 @@ $( "#sort_production_slideToggle" ).click(function() {
 
 
 // Изменение цвета по клику
-    $(document).ready(function() {
-        $("#sort_production_slideToggle").click(function() {
-            $(this).css('color', 'orange');
-        });
-    });
+// $(document).ready(function() {
+//     $("#sort_production_slideToggle").click(function() {
+//         $(this).css('color', 'orange');
+//     });
+// });
+// поворот картинки при клике
+$('h4#sort_production_slideToggle').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon').toggleClass('active');
+});
 
-    $('h4#sort_production_slideToggle').click(function (e) {
-        e.preventDefault();
-        $(this).find('span.span_icon').toggleClass('active');
+$(".production_input_2").hide();
+$( " #sort_production_slideToggle_2" ).click(function() {
+    $( ".production_input_2" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_2').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_2').toggleClass('active');
+});
+
+$(".production_input_3").hide();
+$( " #sort_production_slideToggle_3" ).click(function() {
+    $( ".production_input_3" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_3').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_3').toggleClass('active');
+});
+
+$(".production_input_4").hide();
+$( " #sort_production_slideToggle_4" ).click(function() {
+    $( ".production_input_4" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_4').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_4').toggleClass('active');
+});
+
+$(".production_input_5").hide();
+$( " #sort_production_slideToggle_5" ).click(function() {
+    $( ".production_input_5" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_5').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_5').toggleClass('active');
+});
+
+$(".production_input_6").hide();
+$( " #sort_production_slideToggle_6" ).click(function() {
+    $( ".production_input_6" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_6').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_6').toggleClass('active');
+});
+
+//?      __________
+
+
+  
+  // Price slider_length
+  let startValue = 100;
+  let endValue = 900;
+  let minValue = 100;
+  let maxValue = 900;
+    $("#slider-container").slider({
+      range: true,
+      min: minValue,
+      max: maxValue,
+      values: [startValue, endValue],
+      create: function(){
+        $("#amount-from").val(startValue);
+        $("#amount-to").val(endValue);
+      },
+      slide: function(event, ui){
+        $("#amount-from").val(ui.values[0]);
+        $("#amount-to").val(ui.values[1]);
+        let from = $("#amount-from").val();
+        let to = $("#amount-to").val();
+        console.log( from + " --- " + to );
+      }
     });
+ // Price slider_Price
+    let startValuePrice = 100;
+    let endValuePrice = 5000;
+    let minValuePrice = 100;
+    let maxValuePrice = 5000;
+      $("#slider-container-price").slider({
+        range: true,
+        min: minValue,
+        max: maxValue,
+        values: [startValue, endValue],
+        create: function(){
+          $("#amountPrice-from").val(startValuePrice);
+          $("#amountPrice-to").val(endValuePrice);
+        },
+        slide: function(event, ui){
+          $("#amountPrice-from").val(ui.values[0]);
+          $("#amountPrice-to").val(ui.values[1]);
+          let from = $("#amountPrice-from").val();
+          let to = $("#amountPrice-to").val();
+          console.log( from + " --- " + to );
+        }
+      });
