@@ -30,3 +30,35 @@ $colorOrange:#E8AA31;
   text-decoration: none;
   border-radius: 3px;
 }
+
+@mixin input_price{
+  display: block;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  //   -webkit-appearance: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+
+}
+@mixin ui-state {
+  border: none;
+  background: #070707;
+  font-weight: normal;
+  color: #454545;
+  border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  &:focus{
+      outline: 0;
+      box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+      }
+  
+}

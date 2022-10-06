@@ -427,34 +427,34 @@
             <div class="nav_filters">
                 <h4>Цена, руб</h4> 
 
-            <form name="form_Price_length" action="#" method="post">      
-                <div class="clearfix">
-                    <div class="form-group clearfix">
-                        <div class="amountPrice-box">
-                            <div class="col-sm-6">
-                                <label for="amountPrice-from">
-                                    <!-- From:  -->
-                                </label>
-                                <input type="text" id="amountPrice-from" onkeypress="return isNumberKey(event)" value="6963145">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="amountPrice-to">
-                                    <!-- To:  -->
-                                </label>
-                                <input type="text" id="amountPrice-to" onkeypress="return isNumberKey(event)" value="330000005">
-                            </div>
-                        </div> 
+                <form name="form_Price_length" action="#" method="post">      
+                    <div class="clearfix_price">
+                        <div class="form-group_priceSlider">
+                            <div class="amountPrice-box">
+                                <div class="col-sm-6">
+                                    <label for="amountPrice-from">
+                                        <!-- From:  -->
+                                    </label>
+                                    <input type="text" id="amountPrice-from" onkeypress="return isNumberKey(event)" value="6963145">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="amountPrice-to">
+                                        <!-- To:  -->
+                                    </label>
+                                    <input type="text" id="amountPrice-to" onkeypress="return isNumberKey(event)" value="330000005">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="clearfix_Price">
+                            <label>
+                                <!-- Общая длина, мм -->
+                            </label>
+                            <div id="slider-container-price"></div>
+                        </div>
                     </div>
-                    <div class="form-group clearfix">
-                        <label>
-                            <!-- Общая длина, мм -->
-                        </label>
-                        <div id="slider-container-price"></div>
-                    </div>
-                </div>
-            
-            </form>      
-        </div>
+                
+                </form>      
+            </div>
 
             <div class="sort_production">
                     <h4 id="sort_production_slideToggle">Производство
@@ -741,17 +741,14 @@
                 </ul>
             </div>
 
-            <!--?  _________ -->
-
             <div class="filter-project sort_production">
                     <h4 id="sort_production_slideToggle_6">Общая длина, мм
-                        <!-- <span class="name_link"></span> -->
                         <span class="span_icon_6"></span>
                     </h4> 
 
                 <form name="form_length" action="#" method="post" class="production_input_6" >      
                     <div class="clearfix">
-                        <div class="form-group clearfix">
+                        <div class=" clearfix">
                             <div class="amount-box">
                                 <div class="col-sm-6">
                                     <label for="amount-from">
@@ -767,7 +764,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="form-group clearfix">
+                        <div class="clearfix">
                             <label>
                                 <!-- Общая длина, мм -->
                             </label>
@@ -777,7 +774,41 @@
                 
                 </form>      
             </div>
-                   
+
+            <div class="length_of_blade sort_production">
+                <h4 id="sort_production_slideToggle_7">Длина клинка, мм
+                    <span class="span_icon_7"></span>
+                </h4> 
+
+                <form name="form_length_blade" action="#" method="post" class="production_input_7" >      
+                    <div class="clearfix_blade_blade">
+                        <div class=" clearfix_blade">
+                            <div class="amount_blade-box">
+                                <div class="col-sm-6">
+                                    <label for="amount_blade-from">
+                                        <!-- From:  -->
+                                    </label>
+                                    <input type="text" id="amount_blade-from" onkeypress="return isNumberKey(event)" value="694514">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="amount_blade-to">
+                                        <!-- To:  -->
+                                    </label>
+                                    <input type="text" id="amount_blade-to" onkeypress="return isNumberKey(event)" value="33000045">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="clearfix">
+                            <label>
+                                <!-- Общая длина, мм -->
+                            </label>
+                            <div id="slider-container_blade"></div>
+                        </div>
+                    </div>
+                
+                </form>      
+            </div>
+
 
 
 

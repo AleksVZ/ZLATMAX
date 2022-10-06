@@ -221,6 +221,15 @@ $('h4#sort_production_slideToggle_6').click(function (e) {
     $(this).find('span.span_icon_6').toggleClass('active');
 });
 
+$(".production_input_7").hide();
+$( " #sort_production_slideToggle_7" ).click(function() {
+    $( ".production_input_7" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_7').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_7').toggleClass('active');
+});
+
 //?      __________
 
 
@@ -247,25 +256,48 @@ $('h4#sort_production_slideToggle_6').click(function (e) {
         console.log( from + " --- " + to );
       }
     });
- // Price slider_Price
-    let startValuePrice = 100;
-    let endValuePrice = 5000;
-    let minValuePrice = 100;
-    let maxValuePrice = 5000;
-      $("#slider-container-price").slider({
-        range: true,
-        min: minValue,
-        max: maxValue,
-        values: [startValue, endValue],
-        create: function(){
-          $("#amountPrice-from").val(startValuePrice);
-          $("#amountPrice-to").val(endValuePrice);
-        },
-        slide: function(event, ui){
-          $("#amountPrice-from").val(ui.values[0]);
-          $("#amountPrice-to").val(ui.values[1]);
-          let from = $("#amountPrice-from").val();
-          let to = $("#amountPrice-to").val();
-          console.log( from + " --- " + to );
-        }
-      });
+// Price slider_Price
+let startValuePrice = 100;
+let endValuePrice = 5000;
+let minValuePrice = 100;
+let maxValuePrice = 5000;
+$("#slider-container-price").slider({
+    range: true,
+    min: minValue,
+    max: maxValue,
+    values: [startValue, endValue],
+    create: function(){
+    $("#amountPrice-from").val(startValuePrice);
+    $("#amountPrice-to").val(endValuePrice);
+    },
+    slide: function(event, ui){
+    $("#amountPrice-from").val(ui.values[0]);
+    $("#amountPrice-to").val(ui.values[1]);
+    let from = $("#amountPrice-from").val();
+    let to = $("#amountPrice-to").val();
+    console.log( from + " --- " + to );
+    }
+});
+
+// Price slider_Blade
+let startValueBlade = 100;
+let endValueBlade = 800;
+let minValueBlade = 100;
+let maxValueBlade = 800;
+$("#slider-container_blade").slider({
+    range: true,
+    min: minValue,q
+    max: maxValue,
+    values: [startValue, endValue],
+    create: function(){
+    $("#amount_blade-from").val(startValueBlade);
+    $("#amount_blade-to").val(endValueBlade);
+    },
+    slide: function(event, ui){
+    $("#amount_blade-from").val(ui.values[0]);
+    $("#amount_blade-to").val(ui.values[1]);
+    let from = $("#amount_blade-from").val();
+    let to = $("#amount_blade-to").val();
+    console.log( from + " --- " + to );
+    }
+});
