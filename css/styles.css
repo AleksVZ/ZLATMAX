@@ -2418,7 +2418,7 @@ header .nav .nav-links .nav_left {
 .nav_vertical {
   background: #E5E5E5;
   padding-top: 30px;
-  padding-bottom: 250px;
+  padding-bottom: 50px;
 }
 .nav_vertical h3 {
   font-family: "Montserrat", sans-serif;
@@ -2514,22 +2514,47 @@ header .nav .nav-links .nav_left {
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
-.nav_vertical .nav_vertical_main {
+.nav_vertical .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 789px) {
+  .nav_vertical .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.nav_vertical .wrapper .nav_vertical_main {
   max-width: 375px;
+  min-width: 350px;
   width: 100%;
   background: #FEFEFE;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-  padding-bottom: 50px;
+  margin-right: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
-.nav_vertical .nav_vertical_main .nav_filters #slider-container-price {
+@media (max-width: 789px) {
+  .nav_vertical .wrapper .nav_vertical_main {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.nav_vertical .wrapper .nav_vertical_main .nav_filters #slider-container-price {
   max-width: 85%;
   margin: auto;
   height: 6px;
   margin-bottom: 50px;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-button, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-button, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
   border: none;
   background: #070707;
   font-weight: normal;
@@ -2539,30 +2564,30 @@ header .nav .nav-links .nav_left {
   position: absolute;
   top: -7px;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-button:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active:focus {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-button:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active:focus {
   outline: 0;
   -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
           box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
   background-color: #070707;
   border: none;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
   border: none;
   background-color: #E8AA31;
 }
-.nav_vertical .nav_vertical_main .nav_filters .filter-project {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .filter-project {
   max-width: 600px;
   background: #FEFEFE;
 }
-.nav_vertical .nav_vertical_main .nav_filters .amountPrice-box {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .amountPrice-box {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.nav_vertical .nav_vertical_main .nav_filters .amountPrice-box input[type=text], .nav_vertical .nav_vertical_main .nav_filters .amountPrice-box input[type=text] {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .amountPrice-box input[type=text], .nav_vertical .wrapper .nav_vertical_main .nav_filters .amountPrice-box input[type=text] {
   display: block;
   border: 1px solid #ccc;
   padding: 8px 10px;
@@ -2575,7 +2600,7 @@ header .nav .nav-links .nav_left {
   line-height: 20px;
   color: #141414;
 }
-.nav_vertical .nav_vertical_main .nav_filters h4 {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -2584,7 +2609,7 @@ header .nav .nav-links .nav_left {
   background: #000;
   padding: 23px 30px;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .nav_vertical_main .nav_filters .ui-button, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-button, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active {
   border: none;
   background: #070707;
   font-weight: normal;
@@ -2594,23 +2619,23 @@ header .nav .nav-links .nav_left {
   position: absolute;
   top: -7px;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default:focus, .nav_vertical .nav_vertical_main .nav_filters .ui-button:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active:focus {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-content .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget-header .ui-state-default:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-button:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .wrapper .nav_vertical_main .nav_filters html .ui-button.ui-state-disabled:active:focus {
   outline: 0;
   -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
           box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-slider .ui-slider-range {
   background-color: #070707;
   border: none;
 }
-.nav_vertical .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
+.nav_vertical .wrapper .nav_vertical_main .nav_filters .ui-widget.ui-widget-content {
   border: none;
   background-color: #E8AA31;
 }
-.nav_vertical .nav_vertical_main .sort_production {
+.nav_vertical .wrapper .nav_vertical_main .sort_production {
   position: relative;
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon, .nav_vertical .nav_vertical_main .sort_production .span_icon_2, .nav_vertical .nav_vertical_main .sort_production .span_icon_3, .nav_vertical .nav_vertical_main .sort_production .span_icon_4, .nav_vertical .nav_vertical_main .sort_production .span_icon_5, .nav_vertical .nav_vertical_main .sort_production .span_icon_6, .nav_vertical .nav_vertical_main .sort_production .span_icon_7 {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_2, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_3, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_4, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_5, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_6, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_7, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_8 {
   display: inline-block;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -2620,21 +2645,21 @@ header .nav .nav-links .nav_left {
   top: 22px;
   right: 20px;
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_2::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_3::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_4::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_5::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_6::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_7::after {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_2::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_3::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_4::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_5::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_6::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_7::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_8::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f078";
   color: white;
   font-size: 16px;
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_2.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_3.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_4.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_5.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_6.active, .nav_vertical .nav_vertical_main .sort_production .span_icon_7.active {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_2.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_3.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_4.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_5.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_6.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_7.active, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_8.active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.nav_vertical .nav_vertical_main .sort_production .span_icon.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_2.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_3.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_4.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_5.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_6.active::after, .nav_vertical .nav_vertical_main .sort_production .span_icon_7.active::after {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_2.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_3.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_4.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_5.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_6.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_7.active::after, .nav_vertical .wrapper .nav_vertical_main .sort_production .span_icon_8.active::after {
   color: orange;
 }
-.nav_vertical .nav_vertical_main .sort_production h4 {
+.nav_vertical .wrapper .nav_vertical_main .sort_production h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -2643,24 +2668,40 @@ header .nav .nav-links .nav_left {
   background: #000;
   padding: 23px 30px;
 }
-.nav_vertical .nav_vertical_main .sort_production ul {
+@media (max-width: 392px) {
+  .nav_vertical .wrapper .nav_vertical_main .sort_production h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 325px) {
+  .nav_vertical .wrapper .nav_vertical_main .sort_production h4 {
+    font-size: 17px;
+  }
+}
+.nav_vertical .wrapper .nav_vertical_main .sort_production ul {
   list-style: none;
   padding-left: 30px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input, .nav_vertical .nav_vertical_main .sort_production .production_input_2, .nav_vertical .nav_vertical_main .sort_production .production_input_3, .nav_vertical .nav_vertical_main .sort_production .production_input_4, .nav_vertical .nav_vertical_main .sort_production .production_input_5 {
+@media (max-width: 411px) {
+  .nav_vertical .wrapper .nav_vertical_main .sort_production ul {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 {
   /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input label, .nav_vertical .nav_vertical_main .sort_production .production_input_2 label, .nav_vertical .nav_vertical_main .sort_production .production_input_3 label, .nav_vertical .nav_vertical_main .sort_production .production_input_4 label, .nav_vertical .nav_vertical_main .sort_production .production_input_5 label {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input label, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 label, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 label, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 label, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 label, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #141414;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input label span, .nav_vertical .nav_vertical_main .sort_production .production_input_2 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_3 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_4 label span, .nav_vertical .nav_vertical_main .sort_production .production_input_5 label span {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input label span, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 label span, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 label span, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 label span, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 label span, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 label span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -2668,34 +2709,34 @@ header .nav .nav-links .nav_left {
   color: #E8AA31;
   margin-left: 15px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox], .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox], .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox], .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox], .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox], .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox], .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox] {
   display: none;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox] + label:before {
   content: "\f096";
   margin-right: 10px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox] + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox] + label:before {
   letter-spacing: 0px;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox]:checked + label:before {
   content: "\f046";
   color: #E8AA31;
 }
-.nav_vertical .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before {
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5 input[type=checkbox]:checked + label:before, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.nav_vertical #slider-container {
+.nav_vertical .wrapper #slider-container {
   max-width: 85%;
   margin: auto;
   height: 6px;
   margin-bottom: 50px;
 }
-.nav_vertical .ui-state-default, .nav_vertical .ui-widget-content .ui-state-default, .nav_vertical .ui-widget-header .ui-state-default, .nav_vertical .ui-button, .nav_vertical html .ui-button.ui-state-disabled:hover, .nav_vertical html .ui-button.ui-state-disabled:active {
+.nav_vertical .wrapper .ui-state-default, .nav_vertical .wrapper .ui-widget-content .ui-state-default, .nav_vertical .wrapper .ui-widget-header .ui-state-default, .nav_vertical .wrapper .ui-button, .nav_vertical .wrapper html .ui-button.ui-state-disabled:hover, .nav_vertical .wrapper html .ui-button.ui-state-disabled:active {
   border: none;
   background: #070707;
   font-weight: normal;
@@ -2705,89 +2746,297 @@ header .nav .nav-links .nav_left {
   position: absolute;
   top: -7px;
 }
-.nav_vertical .ui-state-default:focus, .nav_vertical .ui-widget-content .ui-state-default:focus, .nav_vertical .ui-widget-header .ui-state-default:focus, .nav_vertical .ui-button:focus, .nav_vertical html .ui-button.ui-state-disabled:hover:focus, .nav_vertical html .ui-button.ui-state-disabled:active:focus {
+.nav_vertical .wrapper .ui-state-default:focus, .nav_vertical .wrapper .ui-widget-content .ui-state-default:focus, .nav_vertical .wrapper .ui-widget-header .ui-state-default:focus, .nav_vertical .wrapper .ui-button:focus, .nav_vertical .wrapper html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .wrapper html .ui-button.ui-state-disabled:active:focus {
   outline: 0;
   -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
           box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
 }
-.nav_vertical .ui-slider .ui-slider-range {
+.nav_vertical .wrapper .ui-slider .ui-slider-range {
   background-color: #070707;
   border: none;
 }
-.nav_vertical .ui-widget.ui-widget-content {
+.nav_vertical .wrapper .ui-widget.ui-widget-content {
   border: none;
   background-color: #E8AA31;
 }
-.nav_vertical .filter-project {
-  max-width: 600px;
+.nav_vertical .wrapper .amount-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .wrapper .amount-box input[type=text], .nav_vertical .wrapper .amount-box input[type=text] {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+}
+.nav_vertical .wrapper #slider-container_blade {
+  max-width: 85%;
+  margin: auto;
+  height: 6px;
+  margin-bottom: 50px;
+}
+.nav_vertical .wrapper .length_of_blade .ui-state-default, .nav_vertical .wrapper .length_of_blade .ui-widget-content .ui-state-default, .nav_vertical .wrapper .length_of_blade .ui-widget-header .ui-state-default, .nav_vertical .wrapper .length_of_blade .ui-button, .nav_vertical .wrapper .length_of_blade html .ui-button.ui-state-disabled:hover, .nav_vertical .wrapper .length_of_blade html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #070707;
+  font-weight: normal;
+  color: #454545;
+  border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+}
+.nav_vertical .wrapper .length_of_blade .ui-state-default:focus, .nav_vertical .wrapper .length_of_blade .ui-widget-content .ui-state-default:focus, .nav_vertical .wrapper .length_of_blade .ui-widget-header .ui-state-default:focus, .nav_vertical .wrapper .length_of_blade .ui-button:focus, .nav_vertical .wrapper .length_of_blade html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .wrapper .length_of_blade html .ui-button.ui-state-disabled:active:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+          box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
+}
+.nav_vertical .wrapper .length_of_blade .ui-slider .ui-slider-range {
+  background-color: #070707;
+  border: none;
+}
+.nav_vertical .wrapper .length_of_blade .ui-widget.ui-widget-content {
+  border: none;
+  background-color: #E8AA31;
+}
+.nav_vertical .wrapper .length_of_blade .amount_blade-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .wrapper .length_of_blade .amount_blade-box input[type=text], .nav_vertical .wrapper .length_of_blade .amount_blade-box input[type=text] {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+}
+.nav_vertical .wrapper .production_input_8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .wrapper .production_input_8 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+@media (max-width: 411px) {
+  .nav_vertical .wrapper .production_input_8 p {
+    margin-left: 3px;
+  }
+}
+.nav_vertical .wrapper .production_input_8 .Stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_vertical .wrapper .production_input_8 .Stars li:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f005";
+  color: #E8AA31;
+  font-size: 22px;
+  margin-left: 6px;
+  position: relative;
+  top: -1px;
+}
+.nav_vertical .wrapper .production_input_8 .Stars li:first-child:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f005";
+  color: #E8AA31;
+  font-size: 22px;
+  margin-left: -20px;
+  position: relative;
+  top: -1px;
+}
+@media (max-width: 411px) {
+  .nav_vertical .wrapper .production_input_8 .Stars li:first-child:before {
+    margin-left: -5px;
+  }
+}
+.nav_vertical .wrapper .card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -15px;
+}
+@media (max-width: 789px) {
+  .nav_vertical .wrapper .card_box {
+    margin-top: 15px;
+  }
+}
+.nav_vertical .wrapper .card_box .hits_card {
+  max-width: 375px;
+  width: 100%;
   background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 22px 20px;
+  margin: 15px 5px;
 }
-.nav_vertical .amount-box {
+@media (max-width: 400px) {
+  .nav_vertical .wrapper .card_box .hits_card {
+    padding: 10px 10px;
+  }
+}
+.nav_vertical .wrapper .card_box .hits_card ul {
+  list-style: none;
+}
+.nav_vertical .wrapper .card_box .hits_card .img_card {
+  width: 270px;
+  overflow: hidden;
+}
+.nav_vertical .wrapper .card_box .hits_card .img_card img {
+  display: block;
   width: 100%;
+}
+.nav_vertical .wrapper .card_box .hits_card h4 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+  margin-top: 20px;
+}
+.nav_vertical .wrapper .card_box .hits_card .hits_card_size {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.nav_vertical .amount-box input[type=text], .nav_vertical .amount-box input[type=text] {
-  display: block;
-  border: 1px solid #ccc;
-  padding: 8px 10px;
-  width: 100%;
-  border-radius: 0;
-  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.nav_vertical .wrapper .card_box .hits_card .hits_card_reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.nav_vertical .wrapper .card_box .hits_card .hits_card_reviews .hits_card_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.nav_vertical .wrapper .card_box .hits_card .hits_card_reviews .hits_card_stars :before {
+  color: orange;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f005";
+  font-size: 22px;
+}
+.nav_vertical .wrapper .card_box .hits_card .hits_card_reviews .hits_card_stars li {
+  margin-right: 3px;
+}
+.nav_vertical .wrapper .card_box .hits_card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 26px;
+}
+.nav_vertical .wrapper .card_box .hits_card_price li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
   color: #141414;
 }
-.nav_vertical #slider-container_blade {
-  max-width: 85%;
+.nav_vertical .wrapper .card_box .hits_card_price ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.nav_vertical .wrapper .card_box .hits_card_price ul li:last-child ::before {
+  display: block;
+  background-image: url("../img/heart.svg");
+  content: "";
+  background-size: cover;
+  width: 28px;
+  height: 25px;
+  margin-left: 15px;
+}
+.nav_vertical .wrapper .card_box .hits_card_price ul li:first-child ::before {
+  display: block;
+  background-image: url("../img/Vesy.svg");
+  content: "";
+  background-size: cover;
+  width: 26px;
+  height: 24px;
+}
+.nav_vertical .wrapper .card_box .button {
+  max-width: 335px;
+  width: 100%;
+  background: #E8AA31;
+  -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+          box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+  border-radius: 3px;
   margin: auto;
-  height: 6px;
-  margin-bottom: 50px;
 }
-.nav_vertical .length_of_blade .ui-state-default, .nav_vertical .length_of_blade .ui-widget-content .ui-state-default, .nav_vertical .length_of_blade .ui-widget-header .ui-state-default, .nav_vertical .length_of_blade .ui-button, .nav_vertical .length_of_blade html .ui-button.ui-state-disabled:hover, .nav_vertical .length_of_blade html .ui-button.ui-state-disabled:active {
-  border: none;
-  background: #070707;
-  font-weight: normal;
-  color: #454545;
-  border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  top: -7px;
+.nav_vertical .wrapper .card_box .button :hover {
+  color: #E8AA31;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+  background: #141414;
 }
-.nav_vertical .length_of_blade .ui-state-default:focus, .nav_vertical .length_of_blade .ui-widget-content .ui-state-default:focus, .nav_vertical .length_of_blade .ui-widget-header .ui-state-default:focus, .nav_vertical .length_of_blade .ui-button:focus, .nav_vertical .length_of_blade html .ui-button.ui-state-disabled:hover:focus, .nav_vertical .length_of_blade html .ui-button.ui-state-disabled:active:focus {
-  outline: 0;
-  -webkit-box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
-          box-shadow: 0px 0px 3px 2px rgb(232, 168, 7);
-}
-.nav_vertical .length_of_blade .ui-slider .ui-slider-range {
-  background-color: #070707;
-  border: none;
-}
-.nav_vertical .length_of_blade .ui-widget.ui-widget-content {
-  border: none;
-  background-color: #E8AA31;
-}
-.nav_vertical .length_of_blade .amount_blade-box {
+.nav_vertical .wrapper .card_box .button a {
+  display: inline-block;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.nav_vertical .length_of_blade .amount_blade-box input[type=text], .nav_vertical .length_of_blade .amount_blade-box input[type=text] {
-  display: block;
-  border: 1px solid #ccc;
-  padding: 8px 10px;
-  width: 100%;
-  border-radius: 0;
-  margin-bottom: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #141414;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
 }
 
 * {

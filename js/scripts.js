@@ -230,6 +230,16 @@ $('h4#sort_production_slideToggle_7').click(function (e) {
     $(this).find('span.span_icon_7').toggleClass('active');
 });
 
+$(".production_input_8").hide();
+$( " #sort_production_slideToggle_8" ).click(function() {
+    $( ".production_input_8" ).slideToggle();
+});
+$('h4#sort_production_slideToggle_8').click(function (e) {
+    e.preventDefault();
+    $(this).find('span.span_icon_8').toggleClass('active');
+});
+
+
 //?      __________
 
 
