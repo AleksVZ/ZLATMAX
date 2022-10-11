@@ -286,7 +286,7 @@ let minValueBlade = 100;
 let maxValueBlade = 800;
 $("#slider-container_blade").slider({
     range: true,
-    min: minValue,q
+    min: minValue,
     max: maxValue,
     values: [startValue, endValue],
     create: function(){
