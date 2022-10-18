@@ -79,6 +79,8 @@
   font-family: FontAwesome;
   display: inline-block;
   font-size: 24px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
 }
 
 .page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
@@ -113,7 +115,9 @@
 .page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
-  font-size: 23px;
+  font-size: 22px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
 }
 
 .page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {

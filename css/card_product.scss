@@ -77,6 +77,8 @@
                 font-family: FontAwesome;
                 display: inline-block;
                 font-size: 24px;
+                color:rgba(7, 7, 7, 0.92);
+                cursor: pointer;
                 }
 
                 input[type=checkbox] + label:before { content: "\f004"; margin-right: 10px;} /* unchecked icon */
@@ -91,7 +93,9 @@
                 input[type=checkbox] + label:before {
                         font-family: FontAwesome;
                         display: inline-block;
-                        font-size: 23px;
+                        font-size: 22px;
+                        color:rgba(7, 7, 7, 0.92);
+                        cursor: pointer;
                 }
                 input[type=checkbox] + label:before {           
                     content: "\f24e"; margin-right: 10px;} /* unchecked icon */
@@ -105,11 +109,11 @@
                     // width: 24px;
                     // height: 22px;
                     content: "\f24e";
-                    color:#E8AA31;; 
+                    color:#E8AA31;
 
                 } /* checked icon */
                 input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
-        }
+            }
         
 
         }

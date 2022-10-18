@@ -33,10 +33,10 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $('.slide-two').owlCarousel({
-        loop:true,
+        loop:false,
         margin:20,
         autoplay:false,
-        mouseDrag: true,
+        mouseDrag: false,
         nav: false,
         dots:true,
         navText: [ '', ' ' ],
@@ -60,10 +60,10 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $('.slide-three').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         autoplay:false,
-        mouseDrag: true,
+        mouseDrag: false,
         nav: false,
         dots:true,
 
