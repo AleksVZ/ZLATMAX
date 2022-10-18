@@ -1492,22 +1492,65 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.stock_up .hits_flex .hits_card_price ul li:last-child ::before {
-  display: block;
-  background-image: url("../img/heart.svg");
-  content: "";
-  background-size: cover;
-  width: 28px;
-  height: 25px;
-  margin-left: 15px;
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
 }
-.stock_up .hits_flex .hits_card_price ul li:first-child ::before {
-  display: block;
-  background-image: url("../img/Vesy.svg");
-  content: "";
-  background-size: cover;
-  width: 26px;
-  height: 24px;
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] {
+  display: none;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  content: "\f004";
+  margin-right: 10px;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  content: "\f004";
+  color: #E8AA31;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] {
+  display: none;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  content: "\f24e";
+  margin-right: 10px;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  content: "\f24e";
+  color: #E8AA31;
+}
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
 }
 .stock_up .hits_flex .button {
   max-width: 335px;
@@ -1744,22 +1787,65 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.stock_down .hits_flex .hits_card_price ul li:last-child ::before {
-  display: block;
-  background-image: url("../img/heart.svg");
-  content: "";
-  background-size: cover;
-  width: 28px;
-  height: 25px;
-  margin-left: 15px;
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
 }
-.stock_down .hits_flex .hits_card_price ul li:first-child ::before {
-  display: block;
-  background-image: url("../img/Vesy.svg");
-  content: "";
-  background-size: cover;
-  width: 26px;
-  height: 24px;
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] {
+  display: none;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  content: "\f004";
+  margin-right: 10px;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  content: "\f004";
+  color: #E8AA31;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] {
+  display: none;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  content: "\f24e";
+  margin-right: 10px;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  content: "\f24e";
+  color: #E8AA31;
+}
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
 }
 .stock_down .hits_flex .button {
   max-width: 335px;
@@ -2242,22 +2328,65 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.lights .hits_flex .hits_card_price ul li:last-child ::before {
-  display: block;
-  background-image: url("../img/heart.svg");
-  content: "";
-  background-size: cover;
-  width: 28px;
-  height: 25px;
-  margin-left: 15px;
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
 }
-.lights .hits_flex .hits_card_price ul li:first-child ::before {
-  display: block;
-  background-image: url("../img/Vesy.svg");
-  content: "";
-  background-size: cover;
-  width: 26px;
-  height: 24px;
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] {
+  display: none;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  content: "\f004";
+  margin-right: 10px;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  content: "\f004";
+  color: #E8AA31;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 {
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] {
+  display: none;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  content: "\f24e";
+  margin-right: 10px;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  content: "\f24e";
+  color: #E8AA31;
+}
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
 }
 .lights .hits_flex .button {
   max-width: 335px;

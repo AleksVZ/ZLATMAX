@@ -85,10 +85,10 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $('.slide-four').owlCarousel({
-        loop:true,
+        loop:false,
         margin:20,
         autoplay:false,
-        mouseDrag: true,
+        mouseDrag: false,
         nav: false,
         dots:true,
         navText: [ '', ' ' ],
@@ -112,10 +112,10 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $('.slide-five').owlCarousel({
-        loop:true,
+        loop:false,
         margin:20,
         autoplay:false,
-        mouseDrag: true,
+        mouseDrag: false,
         nav: false,
         dots:true,
         navText: [ '', ' ' ],
