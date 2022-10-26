@@ -1,4 +1,5 @@
 .page_card_product{
+   
 
 
     .wrapper_knife_Snegir{
@@ -6,31 +7,83 @@
         justify-content: space-between;
         
 
-        .big_photo{
+        .container_big_photo{
+            box-shadow:5px 5px 25px rgba(0,0,0, .5);
+            overflow:hidden;
             max-width: 100%;
             width: 100%;
-            margin-bottom: 20px;
             overflow: hidden;
+            padding-bottom: 30px;
             img{
                 display: block;
                 width: 100%;
             }
-        }
-        .wrapper_small_photo{
-            display: flex;
+            .thumbnail{
+            display:flex;
             justify-content: space-between;
-
-            .small_photo{
-                width: 23%;
-                overflow: hidden;
-                img{
-                    display: block;
-                    width: 100%;
+        
+                .thumb{
+                    // height:200px;
+                    // width:200px;
+                    transition:all .2s;
+                    // object-fit:cover;
+                    cursor:pointer;
+                    width: 23%;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    &:hover{
+                    box-shadow: 3px 3px 20px ;
+                    opacity:.8;
+                    }
                 }
             }
-    }
+          }
+            .desc{  
+                position:relative;
+                width: 100%;
+                // max-height:574px;
+                overflow:hidden;
+            
+                .imgsrc{
+                    .prev{
+                        object-fit:cover;
+                        width:100%;
+                        height:auto;
+                        margin-bottom: 30px;
+                        overflow: hidden;
+                    }
+                    img{
+                        display: block;
+                        width: 100%;
+
+                    }
+                }
+            }
+        
+            @keyframes fade {
+                to {
+                opacity:1;
+                }
+            }
+            
+            .effect {
+                opacity:0;
+                animation: fade .2s forwards;
+            }
+            
+            .active{
+                opacity:.5;
+            }
+
     }
     .wrapper_Snegir_right{
+        border: 1px solid rgba(20, 20, 20, 0.15);
+        background: #E5E5E5;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
         
         h3{
             font-family: 'Montserrat', sans-serif;
@@ -55,68 +108,162 @@
                         content: "\f005";
                         color:#E8AA31;
                         font-size: 22px;
-                        margin-left: 6px;
+                        margin-right: 6px;
 
                     }
                 }
             
             }
-
-
+            .Snegir_card_price{
+                list-style: none;
+                display: flex;
+                align-items: end;
+                .Snegir_input_1{
     
-                
+                    input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+                    input[type=checkbox] + label:before {
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    font-size: 24px;
+                    color:rgba(7, 7, 7, 0.92);
+                    cursor: pointer;
+                    }
+    
+                    input[type=checkbox] + label:before { content: "\f004"; margin-left: 10px;} /* unchecked icon */
+                    input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+                    input[type=checkbox]:checked + label:before { content: "\f004"; color:#E8AA31; } /* checked icon */
+                    input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+                }
+                .Snegir_input_2{
+    
+                    input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+                    input[type=checkbox] + label:before {
+                            font-family: FontAwesome;
+                            display: inline-block;
+                            font-size: 22px;
+                            color:rgba(7, 7, 7, 0.92);
+                            cursor: pointer;
+                    }
+                    input[type=checkbox] + label:before {           
+                        content: "\f24e"; margin-left: 10px;} /* unchecked icon */
+                    input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+                    input[type=checkbox]:checked + label:before {   
+                        // display: block;
+                        // background-image: url('../img/Vesy.svg');
+                        // content: '';
+                        // background-size: cover;
+                        // width: 24px;
+                        // height: 22px;
+                        content: "\f24e";
+                        color:#E8AA31;
+    
+                    } /* checked icon */
+                    input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+                }
+            
+    
+            }
         }
-        .Snegir_card_price{
-            list-style: none;
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #24AD53;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        hr{
+            border: 1px solid rgba(20, 20, 20, 0.15);
+            margin-bottom: 20px;
+        }
+        .vendor_code{
             display: flex;
-            align-items: end;
-            .Snegir_input_1{
-
-                input[type=checkbox] { display:none; } /* to hide the checkbox itself */
-                input[type=checkbox] + label:before {
-                font-family: FontAwesome;
-                display: inline-block;
-                font-size: 24px;
-                color:rgba(7, 7, 7, 0.92);
-                cursor: pointer;
+            ul:first-of-type{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #141414;
+                list-style: none;
+                margin-right: 30px;
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+            ul:last-of-type{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: rgba(20, 20, 20, 0.5);
+                list-style: none;
+                li{
+                    margin-bottom: 20px;
                 }
 
-                input[type=checkbox] + label:before { content: "\f004"; margin-right: 10px;} /* unchecked icon */
-                input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
-
-                input[type=checkbox]:checked + label:before { content: "\f004"; color:#E8AA31; } /* checked icon */
-                input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
             }
-            .Snegir_input_2{
-
-                input[type=checkbox] { display:none; } /* to hide the checkbox itself */
-                input[type=checkbox] + label:before {
-                        font-family: FontAwesome;
-                        display: inline-block;
-                        font-size: 22px;
-                        color:rgba(7, 7, 7, 0.92);
-                        cursor: pointer;
-                }
-                input[type=checkbox] + label:before {           
-                    content: "\f24e"; margin-right: 10px;} /* unchecked icon */
-                input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
-
-                input[type=checkbox]:checked + label:before {   
-                    // display: block;
-                    // background-image: url('../img/Vesy.svg');
-                    // content: '';
-                    // background-size: cover;
-                    // width: 24px;
-                    // height: 22px;
-                    content: "\f24e";
-                    color:#E8AA31;
-
-                } /* checked icon */
-                input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
-            }
-        
+            
 
         }
+        .form_choice_steel{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+
+            .choice_steel_box{
+                // max-width: 500px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #141414;
+                    margin-right: 10px;
+                }
+                option{
+                    height: 25px;  
+
+                }
+
+                #choice_steel, #choice_handle, #choice_garda, #choice_blade_processing {
+                    width: 65%;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: rgba(20, 20, 20, 0.5);
+                    // margin-bottom: 20px;
+                    padding: 11px;
+                    background: #FEFEFE;
+                    border: 1px solid rgba(4, 4, 4, 0.15);
+                    border-radius: 3px;
+                    &:hover{
+                        @include focusForm;
+
+                        // border:1px solid $colorOrange;
+                        // outline: 0;
+                        // box-shadow: 0 0 3px 1px $colorOrange;
+                        // transition: 0.2s;
+                    }
+
+
+                }
+                
+
+            }
+
+        }
+
+
 
     }
 

@@ -413,27 +413,33 @@
         </div>
 
         <div class="row wrapper_knife_Snegir">
-            <div class="c0l-12 col-lg-6">
-                <div class="big_photo">
-                    <img src="img/Nozh_Snegir_1.jpg" alt="photo">
-                </div>
-                <div class="wrapper_small_photo">
-                    <div class="small_photo">
-                        <div><img src="img/Nozh_Snegir_2.jpg" alt="photo"></div>
-                    </div>
-                    <div class="small_photo">
-                        <div><img src="img/Nozh_Snegir_3.jpg" alt="photo"></div>
-                    </div>
-                    <div class="small_photo">
-                        <div><img src="img/Nozh_Snegir_4.jpg" alt="photo"></div>
-                    </div>
-                    <div class="small_photo">
-                        <div><img src="img/Nozh_Snegir_5.jpg" alt="photo"></div>
-                    </div>
-                </div>
 
+            <div class="c0l-12 col-lg-6 ">
+
+                <div class ="container_big_photo">
+  
+                    <div class="desc">
+                      
+                      <div class="imgsrc">
+                         <img src="img/Nozh_Snegir_1.jpg" class="prev">
+                      </div>
+                    </div>
+                    
+                    <div class="thumbnail">
+                      <img src="img/Nozh_Snegir_1.jpg"  class="thumb">
+                      
+                      <img src="img/Nozh_Snegir_2.jpg"   class="thumb">
+                      
+                      <img src="img/Nozh_Snegir_3.jpg"  class="thumb">
+            
+                      <img src="img/Nozh_Snegir_4.jpg"  class="thumb">
+                      
+            
+                    </div>
+                  </div>
 
             </div>
+
             <div class="c0l-12 col-lg-6 wrapper_Snegir_right">
                 <h3>Нож Снегирь</h3>
                 <div class="Stars_Snegir">
@@ -454,10 +460,95 @@
                             <label for="box120"></label>
                         </li>
                     </ul>
+                </div>
+                <p>В наличии</p>
+                <hr>
+                <div class="vendor_code">
+                    <ul>
+                        <li>Артикул:</li>
+                        <li>Торговая марка:</li>
+                        <li>Серия:</li>
+                        <li>Бонусные баллы: </li>
+                    </ul>
+                    <ul>
+                        <li>AF0000001952</li>
+                        <li>WUESTHOF (Германия)</li>
+                        <li>Ножи серии Classic Ikon</li>
+                        <li>38</li>
+                    </ul>
+                </div>
+                <hr>
+                
+                <form name="choice_steel" action="#" method="post" class="d-flex justify-content-between align-items-center form_choice_steel " >
 
+                    <div class="choice_steel_box  mr-3">
+                        <p>Сталь</p>
+                        <label for="choice_steel"></label>
+                        <select name="choice_steel" id="choice_steel">
+                            <option selected> Выбрать сталь</option>
+                            <option value="100Х13М">100Х13М</option>
+                            <option value="110Х18М-ShD">110Х18М-ШД</option>
+                            <option value="40Х10С2М ">40Х10С2М (ЭИ-107)</option>
+                            <option value="50Х14MF">50Х14МФ</option>
+                            <option value="95Х18">95Х18</option>
+                            <option value="AUS-8">AUS-8</option>
+                            <option value="ELMAX">ELMAX</option>
+                            <option value="RWL-34">RWL-34</option>
+                            <option value="Damask">Дамаск</option>
+                        </select>
+                    </div>
 
                     
-                </div>
+                    <div class="choice_steel_box mr-3">
+                        <p>Рукоять</p>
+                        <label for="choice_handle"></label>
+                        <select name="choice_handle" id="choice_handle">
+                            <option selected> Выбрать рукоять</option>
+                            <option value="Mercorne">Mercorne</option>
+                            <option value="Bubingo">Бубинго</option>
+                            <option value="BeriozoviyCap ">Березовый кап</option>
+                            <option value="Grab">Граб</option>
+                            <option value="Oak">Дуб</option>
+                            <option value="Cap">Кап</option>
+                            <option value="Handle_mix">Комбинированная</option>
+                            <option value="chestnut">Каштан</option>
+                            <option value="Quartopren">Квартопрен</option>
+                            <option value="Leather_Metal">Кожа-Металл</option>
+                            <option value="mix_handle">Комбинированная</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="choice_steel_box mr-3">
+                        <p>Гарда и тыльник</p>
+                        <label for="choice_garda"></label>
+                        <select name="choice_garda" id="choice_garda">
+                            <option selected> Выбрать гарда и тыльник</option>
+                            <option value="Aluminum">Алюминий</option>
+                            <option value="Brass">Латунь</option>
+                            <option value="Cast_Bars ">Литой Барс</option>
+                            <option value="Cast_Cougar">Литой Пума</option>
+                            <option value="Cast">Литье</option>
+                            <option value="Metal">Металлический</option>
+                            <option value="Stainless_steel">Нержавеющая сталь</option>
+                            <option value="Textolite">Текстолит</option>
+                            <option value="Garda_mix">Комбинированная</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="choice_steel_box mr-3">
+                        <p>Обработка клинка</p>
+                        <label for="choice_blade_processing"></label>
+                        <select name="choice_blade_processing" id="choice_blade_processing">
+                            <option selected>Выбрать обработку клинка</option>
+                            <option value="gold">Золочение клинка</option>
+                            <option value="golden_picture">Золочение рисунка на клинке</option>
+                            
+                        </select>
+                    </div>
+
+                </form>
                 
                 
             </div>

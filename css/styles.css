@@ -171,6 +171,7 @@ header .nav .nav-links .nav_left {
           box-shadow: 0 0 3px 1px #E8AA31;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 .logo_form .wrapper .left .search_logo_form input {
   width: 98%;
@@ -3305,17 +3306,20 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.page_card_product .wrapper_knife_Snegir .big_photo {
+.page_card_product .wrapper_knife_Snegir .container_big_photo {
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   max-width: 100%;
   width: 100%;
-  margin-bottom: 20px;
   overflow: hidden;
+  padding-bottom: 30px;
 }
-.page_card_product .wrapper_knife_Snegir .big_photo img {
+.page_card_product .wrapper_knife_Snegir .container_big_photo img {
   display: block;
   width: 100%;
 }
-.page_card_product .wrapper_knife_Snegir .wrapper_small_photo {
+.page_card_product .wrapper_knife_Snegir .container_big_photo .thumbnail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3323,13 +3327,63 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.page_card_product .wrapper_knife_Snegir .wrapper_small_photo .small_photo {
+.page_card_product .wrapper_knife_Snegir .container_big_photo .thumbnail .thumb {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
   width: 23%;
   overflow: hidden;
 }
-.page_card_product .wrapper_knife_Snegir .wrapper_small_photo .small_photo img {
+.page_card_product .wrapper_knife_Snegir .container_big_photo .thumbnail .thumb img {
   display: block;
   width: 100%;
+}
+.page_card_product .wrapper_knife_Snegir .container_big_photo .thumbnail .thumb:hover {
+  -webkit-box-shadow: 3px 3px 20px;
+          box-shadow: 3px 3px 20px;
+  opacity: 0.8;
+}
+.page_card_product .wrapper_knife_Snegir .desc {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.page_card_product .wrapper_knife_Snegir .desc .imgsrc .prev {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.page_card_product .wrapper_knife_Snegir .desc .imgsrc img {
+  display: block;
+  width: 100%;
+}
+@-webkit-keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+.page_card_product .wrapper_knife_Snegir .effect {
+  opacity: 0;
+  -webkit-animation: fade 0.2s forwards;
+          animation: fade 0.2s forwards;
+}
+.page_card_product .wrapper_knife_Snegir .active {
+  opacity: 0.5;
+}
+.page_card_product .wrapper_Snegir_right {
+  border: 1px solid rgba(20, 20, 20, 0.15);
+  background: #E5E5E5;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 .page_card_product .wrapper_Snegir_right h3 {
   font-family: "Montserrat", sans-serif;
@@ -3359,9 +3413,9 @@ header .nav .nav-links .nav_left {
   content: "\f005";
   color: #E8AA31;
   font-size: 22px;
-  margin-left: 6px;
+  margin-right: 6px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3370,65 +3424,160 @@ header .nav .nav-links .nav_left {
       -ms-flex-align: end;
           align-items: end;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 {
   /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox] {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox] {
   display: none;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
   font-size: 24px;
   color: rgba(7, 7, 7, 0.92);
   cursor: pointer;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
   content: "\f004";
-  margin-right: 10px;
+  margin-left: 10px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox] + label:before {
   letter-spacing: 0px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox]:checked + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox]:checked + label:before {
   content: "\f004";
   color: #E8AA31;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_1 input[type=checkbox]:checked + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 {
   /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox] {
   display: none;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
   font-size: 22px;
   color: rgba(7, 7, 7, 0.92);
   cursor: pointer;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
   content: "\f24e";
-  margin-right: 10px;
+  margin-left: 10px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox] + label:before {
   letter-spacing: 0px;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox]:checked + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox]:checked + label:before {
   content: "\f24e";
   color: #E8AA31;
 }
-.page_card_product .wrapper_Snegir_right .Snegir_card_price .Snegir_input_2 input[type=checkbox]:checked + label:before {
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
+}
+.page_card_product .wrapper_Snegir_right p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24AD53;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.page_card_product .wrapper_Snegir_right hr {
+  border: 1px solid rgba(20, 20, 20, 0.15);
+  margin-bottom: 20px;
+}
+.page_card_product .wrapper_Snegir_right .vendor_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page_card_product .wrapper_Snegir_right .vendor_code ul:first-of-type {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141414;
+  list-style: none;
+  margin-right: 30px;
+}
+.page_card_product .wrapper_Snegir_right .vendor_code ul:first-of-type li {
+  margin-bottom: 20px;
+}
+.page_card_product .wrapper_Snegir_right .vendor_code ul:last-of-type {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(20, 20, 20, 0.5);
+  list-style: none;
+}
+.page_card_product .wrapper_Snegir_right .vendor_code ul:last-of-type li {
+  margin-bottom: 20px;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141414;
+  margin-right: 10px;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box option {
+  height: 25px;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_steel, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_handle, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_garda, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_blade_processing {
+  width: 65%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(20, 20, 20, 0.5);
+  padding: 11px;
+  background: #FEFEFE;
+  border: 1px solid rgba(4, 4, 4, 0.15);
+  border-radius: 3px;
+}
+.page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_steel:hover, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_handle:hover, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_garda:hover, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_blade_processing:hover {
+  border-color: #E8AA31;
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px 1px #E8AA31;
+          box-shadow: 0 0 3px 1px #E8AA31;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 * {
