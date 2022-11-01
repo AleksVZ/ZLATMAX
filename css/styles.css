@@ -3579,6 +3579,144 @@ header .nav .nav-links .nav_left {
   transition: 0.2s;
   cursor: pointer;
 }
+.page_card_product .wrapper_Snegir_right .shopping-card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter #counter1 {
+  width: 55px;
+  border: none;
+  text-align: center;
+  background: rgba(210, 210, 210, 0.07);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter input[type=number] {
+  -moz-appearance: textfield;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter input::-webkit-outer-spin-button,
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter .btn-outline-success {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding-bottom: 11px;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter .btn-outline-success:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter .counter-minus {
+  border-radius: 3px 0 0 3px;
+}
+.page_card_product .wrapper_Snegir_right .shopping-card-items .counter .counter-plus {
+  border-radius: 0 3px 3px 0;
+}
+.page_card_product .wrapper_Snegir_right .price_knife {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_card_product .wrapper_Snegir_right .price_knife p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-right: 2px;
+  margin-right: 10px;
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 20, 20, 0.5);
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box .tooltip-container {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+  top: 2px;
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box .tooltip {
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 390px;
+  display: block;
+  font-size: 11px;
+  padding: 20px 15px;
+  border-radius: 3px;
+  text-align: left;
+  border: 1px solid rgba(233, 119, 12, 0.89);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  position: absolute;
+  right: -16px;
+  bottom: 38px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #141414;
+  background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box .tooltip:before, .page_card_product .wrapper_Snegir_right .price_knife .tooltip_box .tooltip:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid orange;
+  position: absolute;
+  bottom: -11px;
+  left: 91%;
+}
+.page_card_product .wrapper_Snegir_right .price_knife .tooltip_box .tooltip-container:hover .tooltip, .page_card_product .wrapper_Snegir_right .price_knife .tooltip_box a:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 
 * {
   -webkit-box-sizing: border-box;
