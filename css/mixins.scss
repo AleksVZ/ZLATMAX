@@ -15,6 +15,10 @@ $colorOrange:#E8AA31;
   transition: 0.2s;
   border: 1px solid #E8AA31;
   }
+  @mixin hover_border_black {
+    transition: 0.2s;
+    border: 1px solid $colorBlack;
+    }
 
 @mixin focusForm {
   border-color: $colorOrange;

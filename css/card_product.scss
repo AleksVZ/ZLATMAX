@@ -5,15 +5,16 @@
     .wrapper_knife_Snegir{
         display: flex;
         justify-content: space-between;
+
         
 
         .container_big_photo{
-            box-shadow:5px 5px 25px rgba(0,0,0, .5);
+            // box-shadow:5px 5px 25px rgba(0,0,0, .5);
             overflow:hidden;
             max-width: 100%;
             width: 100%;
             overflow: hidden;
-            padding-bottom: 30px;
+            padding-bottom: 92px;
             img{
                 display: block;
                 width: 100%;
@@ -40,7 +41,7 @@
                     }
                 }
             }
-          }
+        }
             .desc{  
                 position:relative;
                 width: 100%;
@@ -52,7 +53,7 @@
                         object-fit:cover;
                         width:100%;
                         height:auto;
-                        margin-bottom: 30px;
+                        margin-bottom: 71px;
                         overflow: hidden;
                     }
                     img{
@@ -84,6 +85,15 @@
         background: #E5E5E5;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         padding: 30px;
+
+        @media (max-width:1199px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        @media (max-width:600px) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
         
         h3{
             font-family: 'Montserrat', sans-serif;
@@ -192,6 +202,11 @@
                 li{
                     margin-bottom: 20px;
                 }
+                @media (max-width:500px) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                
             }
             ul:last-of-type{
                 font-family: 'Montserrat', sans-serif;
@@ -203,6 +218,10 @@
                 li{
                     margin-bottom: 20px;
                 }
+                @media (max-width:500px) {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
 
             }
             
@@ -212,6 +231,9 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            @media (max-width:709px) {
+                width: 154%;
+            }
 
 
 
@@ -221,6 +243,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
+                @media (max-width:709px) {
+                    flex-direction: column;
+    
+                }
                 p{
                     font-family: 'Montserrat', sans-serif;
                     font-style: normal;
@@ -229,6 +255,9 @@
                     line-height: 22px;
                     color: #141414;
                     margin-right: 10px;
+                    @media (max-width:709px) {
+                        margin-bottom: auto;
+                    }
                 }
                 option{
                     height: 25px;  
@@ -263,15 +292,157 @@
 
         }
 
+
+        .price_knife{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:600px) {
+                flex-direction: column;
+
+            }
+            
+            p{
+
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: #000000;
+            }
+            // p:last-child{
+            //     font-family: 'Montserrat', sans-serif;
+            //     font-weight: 500;
+            //     font-size: 14px;
+            //     line-height: 17px;
+            //     color: rgba(20, 20, 20, 0.5);
+            // }
+
+
+            .tooltip_box{
+                display: flex;
+                align-items: baseline;
+                margin-right: 2px;
+                margin-right: 10px;
+                @media (max-width:600px) {
+                    margin-right: 0px;
+                    display: -webkit-box;
+
+                }
+    
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: rgba(20, 20, 20, 0.5);
+                }
+                .tooltip-container {
+                    cursor: pointer;
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 15px;
+                    position: relative;
+                    top: 2px;
+                }
+                .tooltip {
+                    opacity: 0;
+                    z-index: 99;
+                    color: #bbb;
+                    width: 390px;
+                    display: block;
+                    font-size: 11px;
+                    padding: 20px 15px;
+                    border-radius: 3px;
+                    text-align: left;
+        
+
+                    border: 1px solid transparent;
+                    -webkit-transition: all .2s ease-in-out;
+                    -moz-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+                    -ms-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out;
+                    -webkit-transform: scale(0);
+                    -moz-transform: scale(0);
+                    -o-transform: scale(0);
+                    -ms-transform: scale(0);
+                    transform: scale(0);
+                    position: absolute;
+                    right: -16px;
+                    bottom: 38px;
+        
+        
+        
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #141414;
+                    background: $colorOrange;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+                    @media (max-width:600px) {
+                        width: 200px;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 38px;
+                    }
+                }
+                
+                .tooltip:before,.tooltip:after {
+                    content: '';
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid $colorOrange;
+                    position: absolute;
+                    bottom: -9px;
+                    left: 91%;
+                }
+                
+                .tooltip-container:hover .tooltip,a:hover .tooltip {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -o-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
         .shopping-card-items{
             // max-width: 500px;
             // width: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+
+            @media (max-width:1400px) {
+                flex-direction: column;
+            }
     
             .counter{
                 display: flex;
                 align-items: center;
+                @media (max-width:1400px) {
+                    align-self: flex-start;
+                    margin-bottom: 30px;
+                }
+                @media (max-width:600px) {
+                    align-self: center;
+                    
+                }
+
     
                 #counter1{
                     width: 55px;
@@ -320,117 +491,83 @@
     
     
             }
-        }
-        .price_knife{
+            .box_buttons{
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            p{
-
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 37px;
-            color: #000000;
-            }
-            // p:last-child{
-            //     font-family: 'Montserrat', sans-serif;
-            //     font-weight: 500;
-            //     font-size: 14px;
-            //     line-height: 17px;
-            //     color: rgba(20, 20, 20, 0.5);
-            // }
-            .tooltip_box{
                 display: flex;
-                align-items: baseline;margin-right: 2px;
-                margin-right: 10px;
-    
-                p{
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: rgba(20, 20, 20, 0.5);
+                justify-content: flex-end;
+                // @media (max-width:1400px) {
+                //     flex-direction: column;
+                // }
+                @media (max-width:1400px) {
+                    justify-content: space-around;
                 }
-                .tooltip-container {
-                    cursor: pointer;
-                    position: relative;
-                    display: inline-block;
-                    margin-left: 15px;
-                    position: relative;
-                    top: 2px;
+                @media (max-width:615px) {
+                    flex-direction: column;
                 }
-                .tooltip {
-                    opacity: 0;
-                    z-index: 99;
-                    color: #bbb;
-                    width: 390px;
-                    display: block;
-                    font-size: 11px;
-                    padding: 20px 15px;
+
+
+                .button{
+                    width: 228px;
+
+                    background: $colorOrange;
+                    box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
                     border-radius: 3px;
-                    text-align: left;
+                    // margin: auto;
+                    text-align: center;
+                    margin-left: 10px;
+                    @media (max-width:1400px) {
+                        margin-left: 0px;
+                    }
+                    @media (max-width:615px) {
+                        margin-bottom: 30px;
+    
+                    }
         
-        
-                    border: 1px solid rgba(233, 119, 12, 0.89);
-                    -webkit-transition: all .2s ease-in-out;
-                    -moz-transition: all .2s ease-in-out;
-                    -o-transition: all .2s ease-in-out;
-                    -ms-transition: all .2s ease-in-out;
-                    transition: all .2s ease-in-out;
-                    -webkit-transform: scale(0);
-                    -moz-transform: scale(0);
-                    -o-transform: scale(0);
-                    -ms-transform: scale(0);
-                    transform: scale(0);
-                    position: absolute;
-                    right: -16px;
-                    bottom: 38px;
-        
-        
-        
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 22px;
-                    color: #141414;
-                    background: #FEFEFE;
-                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+                    :hover{
+                        color: $colorOrange;
+                        @include hover_border;
+                        background: #141414;
+                        
+                    
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                    @include Button;
+                    border: 1px solid transparent;
+                    }
                 }
-                
-                .tooltip:before,.tooltip:after {
-                    content: '';
-                    border-left: 10px solid transparent;
-                    border-right: 10px solid transparent;
-                    border-top: 10px solid orange;
-                    position: absolute;
-                    bottom: -11px;
-                    left: 91%;
-                }
-                
-                .tooltip-container:hover .tooltip,a:hover .tooltip {
-                    opacity: 1;
-                    -webkit-transform: scale(1);
-                    -moz-transform: scale(1);
-                    -o-transform: scale(1);
-                    -ms-transform: scale(1);
-                    transform: scale(1);
+                .button_black{
+                    width: 228px;
+
+                    background: black;
+                    box-shadow: 0px 4px 20px #1414147a;
+                    border-radius: 3px;
+                    margin: auto;
+                    text-align: center;
+                    margin-left: 10px;
+                    @media (max-width:615px) {
+                        margin-left: 0px;
+                    }
+        
+                    :hover{
+                        color: $colorBlack;
+                        @include hover_border_black;
+                        background:$colorOrange;
+                        
+                    
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                    @include Button;
+                    border: 1px solid transparent;
+                    }
                 }
             }
 
 
-
-
-
-
-
-
-
-
         }
-
 
 
 
@@ -442,7 +579,7 @@
 
 
         //!             __+++
-}
+    }
     
 
 
