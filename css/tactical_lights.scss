@@ -78,28 +78,28 @@
 
 
                 }
-                .button{
-                    width: 266px;
-                    background: $colorOrange;
-                    box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+                .button_item{
+                    max-width: 335px;
+                    width: 100%;
+                    background: $colorBlack;
+                    box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
                     border-radius: 3px;
-                    // margin: auto;
-                    @media (max-width:650px) {
-                        margin: auto;
-                        width: 100%;
-                      }
+                    margin: auto;
+                    text-align: center;
         
                     :hover{
-                        color: $colorOrange;
-                        @include hover_border;
-                        background: $colorBlack;
+                        color: $colorBlack;
+                        transition: 0.2s;
+                        border: 1px solid transparent;
+                        background: $colorOrange ;
+                        
+                       
                     }
                     a{
                         display: inline-block;
                         width: 100%;
-                        @include Button;
-                        border: 1px solid transparent;
-                        text-align: center;
+                    @include Button;
+                    border: 1px solid transparent;
                     }
                 }
 

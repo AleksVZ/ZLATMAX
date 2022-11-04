@@ -771,10 +771,6 @@ header .nav .nav-links .nav_left {
 .hits .hits_flex .hits_card ul {
   list-style: none;
 }
-.hits .hits_flex .hits_card .img_card {
-  width: 270px;
-  overflow: hidden;
-}
 .hits .hits_flex .hits_card .img_card img {
   display: block;
   width: 100%;
@@ -857,6 +853,33 @@ header .nav .nav-links .nav_left {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+.hits .hits_flex .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.hits .hits_flex .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.hits .hits_flex .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
 }
 .hits .hits_flex .button {
   max-width: 335px;
@@ -1240,6 +1263,33 @@ header .nav .nav-links .nav_left {
 .novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
+.novelties .wellcome .novelties_quarusel .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.novelties .wellcome .novelties_quarusel .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.novelties .wellcome .novelties_quarusel .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
 .novelties .wellcome .novelties_quarusel .button {
   max-width: 335px;
   width: 100%;
@@ -1553,6 +1603,33 @@ header .nav .nav-links .nav_left {
 .stock_up .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
+.stock_up .hits_flex .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.stock_up .hits_flex .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.stock_up .hits_flex .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
 .stock_up .hits_flex .button {
   max-width: 335px;
   width: 100%;
@@ -1848,6 +1925,33 @@ header .nav .nav-links .nav_left {
 .stock_down .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
+.stock_down .hits_flex .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.stock_down .hits_flex .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.stock_down .hits_flex .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
 .stock_down .hits_flex .button {
   max-width: 335px;
   width: 100%;
@@ -2099,27 +2203,24 @@ header .nav .nav-links .nav_left {
   color: #000000;
   margin-bottom: 60px;
 }
-.tactical_lights .row .tactical_lights_box .tactical_light_left .button {
-  width: 266px;
-  background: #E8AA31;
-  -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
-          box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+.tactical_lights .row .tactical_lights_box .tactical_light_left .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
   border-radius: 3px;
+  margin: auto;
+  text-align: center;
 }
-@media (max-width: 650px) {
-  .tactical_lights .row .tactical_lights_box .tactical_light_left .button {
-    margin: auto;
-    width: 100%;
-  }
-}
-.tactical_lights .row .tactical_lights_box .tactical_light_left .button :hover {
-  color: #E8AA31;
+.tactical_lights .row .tactical_lights_box .tactical_light_left .button_item :hover {
+  color: #141414;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  border: 1px solid #E8AA31;
-  background: #141414;
+  border: 1px solid transparent;
+  background: #E8AA31;
 }
-.tactical_lights .row .tactical_lights_box .tactical_light_left .button a {
+.tactical_lights .row .tactical_lights_box .tactical_light_left .button_item a {
   display: inline-block;
   width: 100%;
   font-size: 18px;
@@ -2128,7 +2229,6 @@ header .nav .nav-links .nav_left {
   text-decoration: none;
   border-radius: 3px;
   border: 1px solid transparent;
-  text-align: center;
 }
 .tactical_lights .row .tactical_lights_box .card_img {
   width: 50%;
@@ -2389,6 +2489,33 @@ header .nav .nav-links .nav_left {
 .lights .hits_flex .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
+.lights .hits_flex .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.lights .hits_flex .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.lights .hits_flex .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
 .lights .hits_flex .button {
   max-width: 335px;
   width: 100%;
@@ -2575,6 +2702,10 @@ header .nav .nav-links .nav_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
 }
 .page_down .row_page_down_contacts .form-group .form-control {
   border-radius: 3px 0 0 3px;
@@ -2600,6 +2731,27 @@ header .nav .nav-links .nav_left {
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.8);
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox] {
+  display: none;
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox] + label:before {
+  content: "\f096";
+  margin-right: 10px;
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  color: #E8AA31;
+}
+.page_down .row_page_down_contacts .form-group input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
 }
 .page_down .inform {
   display: -webkit-box;
@@ -3270,6 +3422,33 @@ header .nav .nav-links .nav_left {
 }
 .nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
+}
+.nav_vertical .wrapper .card_box .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.nav_vertical .wrapper .card_box .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.nav_vertical .wrapper .card_box .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
 }
 .nav_vertical .wrapper .card_box .button {
   max-width: 335px;
