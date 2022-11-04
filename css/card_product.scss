@@ -555,7 +555,8 @@
         
                     :hover{
                         color: $colorBlack;
-                        @include hover_border_black;
+                        transition: 0.2s;
+                        border: 1px solid transparent;
                         background:$colorOrange;
                         
                     

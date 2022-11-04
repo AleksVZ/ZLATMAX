@@ -4063,7 +4063,7 @@ header .nav .nav-links .nav_left {
   color: #141414;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  border: 1px solid #141414;
+  border: 1px solid transparent;
   background: #E8AA31;
 }
 .page_card_product .wrapper_Snegir_right .shopping-card-items .box_buttons .button_black a {
