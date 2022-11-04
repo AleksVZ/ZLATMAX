@@ -144,6 +144,9 @@
             
 
         }
+        .form-check {
+            padding-left: 0px;
+        }
         .form-group{
             display: flex;
 
@@ -173,7 +176,7 @@
                 line-height: 22px;
                 color: rgba(255, 255, 255, 0.8);
             }  
-            input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+                        input[type=checkbox] { display:none; } /* to hide the checkbox itself */
             input[type=checkbox] + label:before {
             font-family: FontAwesome;
             display: inline-block;

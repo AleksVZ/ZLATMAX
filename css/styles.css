@@ -2698,6 +2698,9 @@ header .nav .nav-links .nav_left {
   width: 42px;
   height: 43px;
 }
+.page_down .row_page_down_contacts .form-check {
+  padding-left: 0px;
+}
 .page_down .row_page_down_contacts .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
