@@ -3557,11 +3557,6 @@ header .nav .nav-links .nav_left {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (max-width: 709px) {
-  .page_card_product .wrapper_Snegir_right .form_choice_steel {
-    width: 154%;
-  }
-}
 .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box {
   width: 100%;
   display: -webkit-box;
@@ -3618,6 +3613,11 @@ header .nav .nav-links .nav_left {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+}
+@media (max-width: 709px) {
+  .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_steel, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_handle, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_garda, .page_card_product .wrapper_Snegir_right .form_choice_steel .choice_steel_box #choice_blade_processing {
+    width: 100%;
+  }
 }
 .page_card_product .wrapper_Snegir_right .price_knife {
   display: -webkit-box;

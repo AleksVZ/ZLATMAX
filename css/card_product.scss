@@ -232,7 +232,7 @@
             display: flex;
             flex-direction: column;
             @media (max-width:709px) {
-                width: 154%;
+
             }
 
 
@@ -282,6 +282,9 @@
                         // outline: 0;
                         // box-shadow: 0 0 3px 1px $colorOrange;
                         // transition: 0.2s;
+                    }
+                    @media (max-width:709px) {
+                        width: 100%;
                     }
 
 
