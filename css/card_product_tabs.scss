@@ -1,0 +1,155 @@
+.card_product_tabs{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+    #tabs{
+
+        .ui-widget-header{
+            background: #FEFEFE;
+            border: none;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .ui-tabs .ui-tabs-panel{
+            background: #FEFEFE;
+        }
+
+        .ui-state-default a, .ui-state-default a:link{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(20, 20, 20, 0.5);
+
+        }
+        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+            border: 2px solid transparent;
+            background: none;
+
+        }
+        .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #141414;
+        }
+        .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+            border: 2px solid transparent;
+            background: none;
+
+            border-bottom: 2px solid $colorOrange;
+        }
+
+
+
+            #tabs-1{
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #141414;
+            margin-left: 15px;
+        }
+    }
+
+    #tabs-2{
+        h4{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 27px;
+            color: #141414;
+            margin-bottom: 30px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .tabs2_flex{
+            display: flex;
+            ul{
+                list-style: none;
+            }
+            ul:first-child{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 27px;
+                color: #141414;
+            }
+            ul:last-child{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: #141414;
+                margin-left: 15px;
+            }
+        }
+    }
+    #tabs-3{
+        figcaption{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 27px;
+            color: #141414;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        blockquote {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #141414;
+            margin-left: 15px;
+            font-style: oblique;
+        }
+
+    }
+    #tabs-4{
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #141414;
+            margin-left: 15px;
+        }
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -360,5 +360,10 @@ function updateCounter(idCounter, idCost, idTotal, increment) {
 }
 // ___________
 
+// TABS jQuary
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
 
+//   ___________
 
