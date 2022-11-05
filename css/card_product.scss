@@ -1,10 +1,17 @@
 .page_card_product{
 
 
+    .row{
+        @media (min-width:1200px) {
+            margin-right: 0px;
+        }
 
+
+    }
     .wrapper_knife_Snegir{
         display: flex;
         justify-content: space-between;
+
 
         
 
@@ -94,7 +101,7 @@
             margin-left: 0px;
             margin-right: 0px;
         }
-        
+
         h3{
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;

@@ -3481,6 +3481,11 @@ header .nav .nav-links .nav_left {
   border: 1px solid transparent;
 }
 
+@media (min-width: 1200px) {
+  .page_card_product .row {
+    margin-right: 0px;
+  }
+}
 .page_card_product .wrapper_knife_Snegir {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4082,6 +4087,39 @@ header .nav .nav-links .nav_left {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+@media (max-width: 731px) {
+  .card_product_tabs .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 731px) {
+  .card_product_tabs .ui-tabs .ui-tabs-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 731px) {
+  .card_product_tabs .ui-tabs .ui-tabs-panel {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.card_product_tabs .ui-widget.ui-widget-content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (max-width: 500px) {
+  .card_product_tabs .ui-widget.ui-widget-content {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
 .card_product_tabs #tabs .ui-widget-header {
   background: #FEFEFE;
   border: none;
@@ -4097,6 +4135,11 @@ header .nav .nav-links .nav_left {
   line-height: 24px;
   color: rgba(20, 20, 20, 0.5);
 }
+@media (max-width: 731px) {
+  .card_product_tabs #tabs .ui-state-default a, .card_product_tabs #tabs .ui-state-default a:link {
+    font-size: 18px;
+  }
+}
 .card_product_tabs #tabs .ui-state-default, .card_product_tabs #tabs .ui-widget-content .ui-state-default, .card_product_tabs #tabs .ui-widget-header .ui-state-default {
   border: 2px solid transparent;
   background: none;
@@ -4108,10 +4151,15 @@ header .nav .nav-links .nav_left {
   line-height: 24px;
   color: #141414;
 }
+@media (max-width: 731px) {
+  .card_product_tabs #tabs .ui-state-active a, .card_product_tabs #tabs .ui-state-active a:link, .card_product_tabs #tabs .ui-state-active a:visited {
+    font-size: 18px;
+  }
+}
 .card_product_tabs #tabs .ui-state-active, .card_product_tabs #tabs .ui-widget-content .ui-state-active, .card_product_tabs #tabs .ui-widget-header .ui-state-active {
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   background: none;
-  border-bottom: 2px solid #E8AA31;
+  border-bottom: 3px solid #E8AA31;
 }
 .card_product_tabs #tabs #tabs-1 p {
   font-family: "Montserrat", sans-serif;
@@ -4120,6 +4168,11 @@ header .nav .nav-links .nav_left {
   line-height: 27px;
   color: #141414;
   margin-left: 15px;
+}
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-1 p {
+    font-size: 16px;
+  }
 }
 .card_product_tabs #tabs #tabs-2 h4 {
   font-family: "Montserrat", sans-serif;
@@ -4130,6 +4183,11 @@ header .nav .nav-links .nav_left {
   margin-bottom: 30px;
   margin-top: 15px;
   text-transform: uppercase;
+}
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-2 h4 {
+    font-size: 20px;
+  }
 }
 .card_product_tabs #tabs #tabs-2 .tabs2_flex {
   display: -webkit-box;
@@ -4146,6 +4204,16 @@ header .nav .nav-links .nav_left {
   line-height: 27px;
   color: #141414;
 }
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-2 .tabs2_flex ul:first-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .card_product_tabs #tabs #tabs-2 .tabs2_flex ul:first-child {
+    display: none;
+  }
+}
 .card_product_tabs #tabs #tabs-2 .tabs2_flex ul:last-child {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -4153,6 +4221,11 @@ header .nav .nav-links .nav_left {
   line-height: 27px;
   color: #141414;
   margin-left: 15px;
+}
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-2 .tabs2_flex ul:last-child {
+    font-size: 16px;
+  }
 }
 .card_product_tabs #tabs #tabs-3 figcaption {
   font-family: "Montserrat", sans-serif;
@@ -4163,7 +4236,12 @@ header .nav .nav-links .nav_left {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.card_product_tabs #tabs #tabs-3 blockquote {
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-3 figcaption {
+    font-size: 18px;
+  }
+}
+.card_product_tabs #tabs #tabs-3 blockquote p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -4172,6 +4250,11 @@ header .nav .nav-links .nav_left {
   margin-left: 15px;
   font-style: oblique;
 }
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-3 blockquote p {
+    font-size: 16px;
+  }
+}
 .card_product_tabs #tabs #tabs-4 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -4179,6 +4262,11 @@ header .nav .nav-links .nav_left {
   line-height: 27px;
   color: #141414;
   margin-left: 15px;
+}
+@media (max-width: 731px) {
+  .card_product_tabs #tabs #tabs-4 p {
+    font-size: 16px;
+  }
 }
 
 * {
