@@ -136,6 +136,61 @@ $(document).ready(function(){
         }
     });
 });
+$(document).ready(function(){
+
+    $('.slide-six').owlCarousel({
+        loop:false,
+        margin:20,
+        autoplay:false,
+        mouseDrag: false,
+        nav: false,
+        dots:true,
+        navText: [ '', ' ' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1529:{
+                items:4
+            }
+        }
+    });
+});
+$(document).ready(function(){
+
+    $('.slide-seven').owlCarousel({
+        loop:false,
+        margin:20,
+        autoplay:false,
+        mouseDrag: false,
+        nav: false,
+        dots:true,
+        navText: [ '', ' ' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1529:{
+                items:4
+            }
+        }
+    });
+});
+
 
 // Price-slider
 // $( function() {

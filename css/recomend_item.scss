@@ -1,0 +1,344 @@
+.recomend_item{
+    padding-bottom: 120px;
+    background: #E5E5E5;
+
+
+        .hits__top__flex{
+    
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 46px;
+                letter-spacing: 0.05em;
+                color: #141414;
+                margin-bottom: 30px;
+                
+                @media (max-width:600px) {
+                        margin-bottom: 20px;
+                }
+            }
+
+        }
+        .hits_flex{
+            // display: flex;
+            // justify-content: space-between;
+            // @media (max-width:1529px) {
+            //     justify-content: space-around;
+            //   }
+    
+            .hits_card{
+                max-width: 375px;
+                width: 100%;
+                background: #FEFEFE;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                padding: 22px 20px;
+                margin: 15px 5px ;
+    
+    
+                @media (max-width:400px) {
+                    padding: 10px 10px;
+                    // max-width: 85%;
+                  }
+    
+                ul{
+                    list-style: none;
+                }
+                .img_card{
+                    // width: 270px;
+                    // overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+    
+                }
+                h4{
+                        text-align: left;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 34px;
+                        color: #141414;
+                        margin-top: 20px;
+                }
+    
+                .hits_card_size{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+    
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 34px;
+                    color: #ABABAB;
+    
+    
+    
+                }
+                .hits_card_reviews{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+    
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 34px;
+                    color: #ABABAB;
+    
+    
+                    .hits_card_stars{
+                        display: flex;
+                        justify-content: flex-start;
+    
+                        
+                        :before{
+                            color: orange;
+                            font-weight: 900;
+                            font-family: "Font Awesome 6 Free";
+                            content: "\f005";
+                            font-size: 22px;
+                        }
+                        li{
+                            margin-right: 3px;
+    
+                        }
+    
+                    }
+    
+    
+                }
+    
+            }
+            .hits_card_price{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 26px;
+    
+    
+    
+                li{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 34px;
+                    color: #141414;
+    
+    
+    
+                }
+                ul{
+                    display: flex;
+                    justify-content: end;
+    
+    
+    
+                // .Snegir_input_1{
+    
+                //     input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+                //     input[type=checkbox] + label:before {
+                //     font-family: FontAwesome;
+                //     display: inline-block;
+                //     font-size: 22px;
+                //     color:rgba(7, 7, 7, 0.92);
+                //     cursor: pointer;
+                //     }
+    
+                //     input[type=checkbox] + label:before { content: "\f004"; margin-right: 10px;} /* unchecked icon */
+                //     input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+                //     input[type=checkbox]:checked + label:before { content: "\f004"; color:#E8AA31; } /* checked icon */
+                //     input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+                // }
+                // .Snegir_input_2{
+    
+                //     input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+                //     input[type=checkbox] + label:before {
+                //             font-family: FontAwesome;
+                //             display: inline-block;
+                //             font-size: 20px;
+                //             color:rgba(7, 7, 7, 0.92);
+                //             cursor: pointer;
+                //     }
+                //     input[type=checkbox] + label:before {           
+                //         content: "\f24e"; margin-right: 10px;} /* unchecked icon */
+                //     input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+                //     input[type=checkbox]:checked + label:before {   
+                //         // display: block;
+                //         // background-image: url('../img/Vesy.svg');
+                //         // content: '';
+                //         // background-size: cover;
+                //         // width: 24px;
+                //         // height: 22px;
+                //         content: "\f24e";
+                //         color:#E8AA31;
+    
+                //     } /* checked icon */
+                //     input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+                // }
+                }
+            }
+            .button_item{
+                max-width: 335px;
+                width: 100%;
+                background: $colorBlack;
+                box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+                border-radius: 3px;
+                margin: auto;
+                margin-bottom: 20px;
+    
+                :hover{
+                    color: $colorBlack;
+                    transition: 0.2s;
+                    border: 1px solid transparent;
+                    background: $colorOrange ;
+                    
+                   
+                }
+                a{
+                    display: inline-block;
+                    width: 100%;
+                @include Button;
+                border: 1px solid transparent;
+                }
+            }
+            .button{
+                max-width: 335px;
+                width: 100%;
+                background: $colorOrange;
+                box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+                border-radius: 3px;
+                margin: auto;
+    
+                :hover{
+                    color: $colorOrange;
+                    @include hover_border;
+                    background: $colorBlack;
+                    
+                   
+                }
+                a{
+                    display: inline-block;
+                    width: 100%;
+                @include Button;
+                border: 1px solid transparent;
+                }
+            }
+        }
+        .owl-carousel.slide-seven {
+            margin: auto;
+            .owl-item{
+    
+                display: flex;
+                justify-content: center;
+            }
+        }
+    
+        .owl-theme.slide-seven .owl-dots {
+            margin-top: 66px;
+            text-align: center;
+        
+            .owl-dot {
+        
+                :hover{
+                    background: $colorOrange;
+                }
+            span{
+                width: 25px;
+                height: 5px;
+                margin: 5px 7px;
+                background:  #898989;
+                display: block;
+                transition: opacity 200ms ease;
+                border-radius: 2px;
+            }
+        }
+        }
+        .owl-carousel.slide-seven .active span {
+            width:25px;
+            height:5px;
+            margin:5px 7px;
+            background: $colorOrange !important;
+            display:block;
+            -webkit-transition:opacity 200ms ease;
+            -moz-transition:opacity 200ms ease;
+            -ms-transition:opacity 200ms ease;
+            -o-transition:opacity 200ms ease;
+            transition:opacity 200ms ease;
+            -webkit-border-radius:2px;
+            -moz-border-radius:2px;
+            border-radius:2px;
+        
+        }
+    
+    
+    
+        .Snegir_input_1{
+    
+            input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+            input[type=checkbox] + label:before {
+            font-family: FontAwesome;
+            display: inline-block;
+            font-size: 22px;
+            color:rgba(7, 7, 7, 0.92);
+            cursor: pointer;
+            }
+    
+            input[type=checkbox] + label:before { content: "\f004"; margin-right: 10px;} /* unchecked icon */
+            input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+            input[type=checkbox]:checked + label:before { content: "\f004"; color:#E8AA31; } /* checked icon */
+            input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+        }
+        .Snegir_input_2{
+    
+            input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+            input[type=checkbox] + label:before {
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    font-size: 20px;
+                    color:rgba(7, 7, 7, 0.92);
+                    cursor: pointer;
+            }
+            input[type=checkbox] + label:before {           
+                content: "\f24e"; margin-right: 10px;} /* unchecked icon */
+            input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
+    
+            input[type=checkbox]:checked + label:before {   
+                // display: block;
+                // background-image: url('../img/Vesy.svg');
+                // content: '';
+                // background-size: cover;
+                // width: 24px;
+                // height: 22px;
+                content: "\f24e";
+                color:#E8AA31;
+    
+            } /* checked icon */
+            input[type=checkbox]:checked + label:before { letter-spacing: 0px; }
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
