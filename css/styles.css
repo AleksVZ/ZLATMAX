@@ -99,8 +99,8 @@ header .nav .nav-links .nav_left {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
-  padding-right: 45px;
+  width: 70%;
+  padding-right: 15px;
 }
 @media (max-width: 1264px) {
   .logo_form .wrapper .left {
@@ -141,9 +141,24 @@ header .nav .nav-links .nav_left {
   }
 }
 .logo_form .wrapper .left .search_logo_form {
-  max-width: 277px;
+  max-width: 750px;
   width: 100%;
   position: relative;
+}
+@media (max-width: 1420px) {
+  .logo_form .wrapper .left .search_logo_form {
+    max-width: 640px;
+  }
+}
+@media (max-width: 1283px) {
+  .logo_form .wrapper .left .search_logo_form {
+    max-width: 600px;
+  }
+}
+@media (max-width: 854px) {
+  .logo_form .wrapper .left .search_logo_form {
+    max-width: 400px;
+  }
 }
 @media (max-width: 640px) {
   .logo_form .wrapper .left .search_logo_form {
@@ -219,10 +234,10 @@ header .nav .nav-links .nav_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 30%;
 }
 @media (max-width: 1264px) {
   .logo_form .wrapper .right {
@@ -256,7 +271,7 @@ header .nav .nav-links .nav_left {
   margin-left: 10px;
 }
 .logo_form .wrapper .right .choice_city_form .phones {
-  margin-right: 125px;
+  margin-right: 15px;
 }
 .logo_form .wrapper .right .choice_city_form .phones label {
   font-family: "Montserrat", sans-serif;
@@ -946,8 +961,7 @@ header .nav .nav-links .nav_left {
   transition: opacity 200ms ease;
   border-radius: 2px;
 }
-.hits .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.hits .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -976,8 +990,7 @@ header .nav .nav-links .nav_left {
 .hits .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.hits .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.hits .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1204,8 +1217,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1234,8 +1246,7 @@ header .nav .nav-links .nav_left {
 .novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.novelties .wellcome .novelties_quarusel .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1544,8 +1555,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1574,8 +1584,7 @@ header .nav .nav-links .nav_left {
 .stock_up .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.stock_up .hits_flex .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1866,8 +1875,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -1896,8 +1904,7 @@ header .nav .nav-links .nav_left {
 .stock_down .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.stock_down .hits_flex .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -2430,8 +2437,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.lights .hits_flex .hits_card_price ul .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.lights .hits_flex .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -2460,8 +2466,7 @@ header .nav .nav-links .nav_left {
 .lights .hits_flex .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.lights .hits_flex .hits_card_price ul .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.lights .hits_flex .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -3059,8 +3064,7 @@ header .nav .nav-links .nav_left {
     padding-right: 10px;
   }
 }
-.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 {
-  /* to hide the checkbox itself */
+.nav_vertical .wrapper .nav_vertical_main .sort_production .production_input, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_2, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_3, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_4, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_5, .nav_vertical .wrapper .nav_vertical_main .sort_production .production_input_8 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -3366,8 +3370,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -3396,8 +3399,7 @@ header .nav .nav-links .nav_left {
 .nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.nav_vertical .wrapper .card_box .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -3621,8 +3623,7 @@ header .nav .nav-links .nav_left {
       -ms-flex-align: end;
           align-items: end;
 }
-.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -3651,8 +3652,7 @@ header .nav .nav-links .nav_left {
 .page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.page_card_product .wrapper_Snegir_right .Stars_Snegir .Snegir_card_price .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -4479,8 +4479,7 @@ header .nav .nav-links .nav_left {
   transition: opacity 200ms ease;
   border-radius: 2px;
 }
-.same_item .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.same_item .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -4509,8 +4508,7 @@ header .nav .nav-links .nav_left {
 .same_item .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.same_item .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.same_item .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -4750,8 +4748,7 @@ header .nav .nav-links .nav_left {
   transition: opacity 200ms ease;
   border-radius: 2px;
 }
-.recomend_item .Snegir_input_1 {
-  /* to hide the checkbox itself */
+.recomend_item .Snegir_input_1 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -4780,8 +4777,7 @@ header .nav .nav-links .nav_left {
 .recomend_item .Snegir_input_1 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
 }
-.recomend_item .Snegir_input_2 {
-  /* to hide the checkbox itself */
+.recomend_item .Snegir_input_2 { /* to hide the checkbox itself */
   /* unchecked icon */
   /* space between checkbox and label */
   /* checked icon */
@@ -4809,6 +4805,452 @@ header .nav .nav-links .nav_left {
 }
 .recomend_item .Snegir_input_2 input[type=checkbox]:checked + label:before {
   letter-spacing: 0px;
+}
+
+.busket_card {
+  padding: 50px;
+  background: #E5E5E5;
+}
+.busket_card .card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -15px;
+}
+@media (max-width: 789px) {
+  .busket_card .card_box {
+    margin-top: 15px;
+  }
+}
+.busket_card .card_box .hits_card {
+  max-width: 375px;
+  width: 100%;
+  background: #FEFEFE;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 22px 20px;
+  margin: 15px 5px;
+}
+@media (max-width: 400px) {
+  .busket_card .card_box .hits_card {
+    padding: 10px 10px;
+  }
+}
+.busket_card .card_box .hits_card ul {
+  list-style: none;
+}
+.busket_card .card_box .hits_card .img_card {
+  width: 270px;
+  overflow: hidden;
+}
+.busket_card .card_box .hits_card .img_card img {
+  display: block;
+  width: 100%;
+}
+.busket_card .card_box .hits_card h4 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+  margin-top: 20px;
+}
+.busket_card .card_box .hits_card .hits_card_size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.busket_card .card_box .hits_card .hits_card_reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ABABAB;
+}
+.busket_card .card_box .hits_card .hits_card_reviews .hits_card_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.busket_card .card_box .hits_card .hits_card_reviews .hits_card_stars :before {
+  color: orange;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f005";
+  font-size: 22px;
+}
+.busket_card .card_box .hits_card .hits_card_reviews .hits_card_stars li {
+  margin-right: 3px;
+}
+.busket_card .card_box .hits_card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 26px;
+}
+.busket_card .card_box .hits_card_price li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #141414;
+}
+.busket_card .card_box .hits_card_price ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 { /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox] {
+  display: none;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  content: "\f004";
+  margin-right: 10px;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  content: "\f004";
+  color: #E8AA31;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_1 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 { /* to hide the checkbox itself */
+  /* unchecked icon */
+  /* space between checkbox and label */
+  /* checked icon */
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox] {
+  display: none;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(7, 7, 7, 0.92);
+  cursor: pointer;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  content: "\f24e";
+  margin-right: 10px;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox] + label:before {
+  letter-spacing: 0px;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  content: "\f24e";
+  color: #E8AA31;
+}
+.busket_card .card_box .hits_card_price ul .Snegir_input_2 input[type=checkbox]:checked + label:before {
+  letter-spacing: 0px;
+}
+.busket_card .card_box .button_item {
+  max-width: 335px;
+  width: 100%;
+  background: #141414;
+  -webkit-box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+          box-shadow: 0px 4px 20px rgba(17, 13, 3, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.busket_card .card_box .button_item :hover {
+  color: #141414;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background: #E8AA31;
+}
+.busket_card .card_box .button_item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.busket_card .card_box .button {
+  max-width: 335px;
+  width: 100%;
+  background: #E8AA31;
+  -webkit-box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+          box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+  border-radius: 3px;
+  margin: auto;
+  border: 1px solid transparent;
+}
+.busket_card .card_box .button :hover {
+  color: #E8AA31;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #E8AA31;
+  background: #141414;
+}
+.busket_card .card_box .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.busket_card .input-group > .form-control, .busket_card .input-group > .form-control-plaintext, .busket_card .input-group > .custom-select, .busket_card .input-group > .custom-file {
+  text-align: center;
+  background: rgba(210, 210, 210, 0.07);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+.form-control:focus {
+  color: inherit;
+  background-color: inherit;
+  border: 1px solid orange;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary {
+  background: #000;
+  color: white;
+  min-width: 50px;
+  border: 1px solid transparent;
+}
+.btn-primary:hover {
+  background: #000;
+  border: 1px solid orange;
+}
+
+.btn-secondary {
+  background: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: orange;
+  background: #000;
+  border: 1px solid orange;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background: #000;
+  border-color: orange;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn_pay {
+  background: green;
+  color: white;
+  border: 1px solid green;
+}
+.btn_pay:hover {
+  background: rgb(2, 93, 2);
+  border: 1px solid rgb(2, 93, 2);
+}
+
+#pay:focus {
+  background: rgb(2, 93, 2);
+  border: 1px solid rgb(2, 93, 2);
+}
+
+#pay:active {
+  background: rgb(2, 93, 2);
+  border: 1px solid rgb(2, 93, 2);
+  color: white;
+}
+
+.btn-danger {
+  background: #E8AA31;
+  min-width: 50px;
+  color: #fff;
+  border-color: #E8AA31;
+}
+
+.table th, .table td {
+  vertical-align: inherit;
+  border-top: none;
+}
+
+.table tr {
+  margin-bottom: 20px;
+}
+@media (max-width: 608px) {
+  .table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 0 0 3px 1px #E8AA31;
+            box-shadow: 0 0 3px 1px #E8AA31;
+  }
+}
+
+.total-cart {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.fixed-top {
+  position: inherit;
+}
+
+.button_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (max-width: 608px) {
+  .button_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 608px) {
+  .col_position {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.clear-cart {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 305px) {
+  .clear-cart {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 25px;
+  color: #E8AA31;
+  font-weight: 600;
 }
 
 * {
