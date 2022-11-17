@@ -108,8 +108,6 @@
             width: 100%;
             background: #FEFEFE;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            // border: 1px solid black;
-            // padding-bottom: 50px;
             margin-right: 10px;
             height: max-content;
             @media (max-width:789px) {
@@ -120,7 +118,6 @@
         .nav_filters{
             #slider-container-price{
                 max-width: 85%;
-                // width: 280px;
                 margin: auto;
                 height: 6px;
                 margin-bottom: 50px;
@@ -139,12 +136,10 @@
             .filter-project{
             max-width: 600px;
             background: #FEFEFE;
-            // padding: 20px;
             }
             .amountPrice-box{
             width: 100%;
             display: flex;
-            // justify-content: space-between;
 
             }
             .amountPrice-box input[type=text], .amountPrice-box input[type=text]{
@@ -162,13 +157,7 @@
 
 
             }
-            // #slider-range{
-            //     width: 83%;
-            //     margin: auto;
-            //     height: 6px;
-            //     margin-bottom: 50px;
 
-            // }
             .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
                 @include ui-state;
             }
@@ -187,7 +176,6 @@
             .span_icon, .span_icon_2, .span_icon_3, .span_icon_4, .span_icon_5, .span_icon_6, .span_icon_7, .span_icon_8 {
                 display: inline-block;
                 transition: transform .2s;
-                // margin-left: 122px;
                 position: absolute;
                 top: 22px;
                 right: 20px;
@@ -263,7 +251,6 @@
         }
         #slider-container{
             max-width: 85%;
-            // width: 280px;
             margin: auto;
             height: 6px;
             margin-bottom: 50px;
@@ -279,15 +266,10 @@
             border: none;
             background-color:#E8AA31;
         }
-        // .filter-project{
-        //     // max-width: 600px;
-        //     background: #FEFEFE;
-        //     // padding: 20px;
-        // }
+
         .amount-box{
             width: 100%;
             display: flex;
-            // justify-content: space-between;
 
         }
         .amount-box input[type=text], .amount-box input[type=text]{
@@ -297,7 +279,6 @@
 
         #slider-container_blade{
                 max-width: 85%;
-                // width: 280px;
                 margin: auto;
                 height: 6px;
                 margin-bottom: 50px;
@@ -319,7 +300,6 @@
             .amount_blade-box{
                 width: 100%;
                 display: flex;
-                // justify-content: space-between;
     
             }
             .amount_blade-box input[type=text], .amount_blade-box input[type=text]{
@@ -401,7 +381,6 @@
             margin: 15px 5px ;
             @media (max-width:400px) {
                 padding: 10px 10px;
-                // max-width: 85%;
               }
 
             ul{
@@ -517,12 +496,6 @@
                     input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
             
                     input[type=checkbox]:checked + label:before {   
-                        // display: block;
-                        // background-image: url('../img/Vesy.svg');
-                        // content: '';
-                        // background-size: cover;
-                        // width: 24px;
-                        // height: 22px;
                         content: "\f24e";
                         color:#E8AA31;
             

@@ -1,9 +1,6 @@
 .main_section{
     background-image: url('../img/BG_Main_section.jpg');
     background-size: cover;
-    // height: 100vh;
-
-
     .row{
         .main_section_left{
             
@@ -76,7 +73,6 @@
     ul{
         
         list-style: none;
-        // margin-top: 136px;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-end;

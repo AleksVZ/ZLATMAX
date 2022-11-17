@@ -16,7 +16,6 @@
         
 
         .container_big_photo{
-            // box-shadow:5px 5px 25px rgba(0,0,0, .5);
             overflow:hidden;
             max-width: 100%;
             width: 100%;
@@ -31,10 +30,7 @@
             justify-content: space-between;
         
                 .thumb{
-                    // height:200px;
-                    // width:200px;
                     transition:all .2s;
-                    // object-fit:cover;
                     cursor:pointer;
                     width: 23%;
                     overflow: hidden;
@@ -52,7 +48,6 @@
             .desc{  
                 position:relative;
                 width: 100%;
-                // max-height:574px;
                 overflow:hidden;
             
                 .imgsrc{
@@ -167,12 +162,6 @@
                     input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
     
                     input[type=checkbox]:checked + label:before {   
-                        // display: block;
-                        // background-image: url('../img/Vesy.svg');
-                        // content: '';
-                        // background-size: cover;
-                        // width: 24px;
-                        // height: 22px;
                         content: "\f24e";
                         color:#E8AA31;
     
@@ -245,7 +234,6 @@
 
 
             .choice_steel_box{
-                // max-width: 500px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -277,18 +265,12 @@
                     font-weight: 500;
                     font-size: 14px;
                     color: rgba(20, 20, 20, 0.5);
-                    // margin-bottom: 20px;
                     padding: 11px;
                     background: #FEFEFE;
                     border: 1px solid rgba(4, 4, 4, 0.15);
                     border-radius: 3px;
                     &:hover{
                         @include focusForm;
-
-                        // border:1px solid $colorOrange;
-                        // outline: 0;
-                        // box-shadow: 0 0 3px 1px $colorOrange;
-                        // transition: 0.2s;
                     }
                     @media (max-width:709px) {
                         width: 100%;
@@ -321,14 +303,6 @@
             line-height: 37px;
             color: #000000;
             }
-            // p:last-child{
-            //     font-family: 'Montserrat', sans-serif;
-            //     font-weight: 500;
-            //     font-size: 14px;
-            //     line-height: 17px;
-            //     color: rgba(20, 20, 20, 0.5);
-            // }
-
 
             .tooltip_box{
                 display: flex;
@@ -431,8 +405,6 @@
 
         }
         .shopping-card-items{
-            // max-width: 500px;
-            // width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -505,9 +477,7 @@
 
                 display: flex;
                 justify-content: flex-end;
-                // @media (max-width:1400px) {
-                //     flex-direction: column;
-                // }
+
                 @media (max-width:1400px) {
                     justify-content: space-around;
                 }
@@ -522,7 +492,6 @@
                     background: $colorOrange;
                     box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
                     border-radius: 3px;
-                    // margin: auto;
                     text-align: center;
                     margin-left: 10px;
                     @media (max-width:1400px) {
@@ -580,16 +549,6 @@
 
         }
 
-
-
-
-        
- 
-
-
-
-
-        //!             __+++
     }
     
 

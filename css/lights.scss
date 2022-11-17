@@ -68,8 +68,7 @@
             margin: 15px 5px ;
             @media (max-width:400px) {
                 padding: 10px 10px;
-                // max-width: 85%;
-              }
+            }
 
             ul{
                 list-style: none;
@@ -184,12 +183,6 @@
                     input[type=checkbox] + label:before { letter-spacing: 0px; } /* space between checkbox and label */
             
                     input[type=checkbox]:checked + label:before {   
-                        // display: block;
-                        // background-image: url('../img/Vesy.svg');
-                        // content: '';
-                        // background-size: cover;
-                        // width: 24px;
-                        // height: 22px;
                         content: "\f24e";
                         color:#E8AA31;
             
